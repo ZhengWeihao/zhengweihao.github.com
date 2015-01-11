@@ -1,3 +1,4 @@
+
 /*!--------------------------------*\
    3-Jekyll Theme
    @author Peiwen Lu (P233)
@@ -14,9 +15,8 @@ if ($(window).width() <= 1280) {
     tag2       = $('.java'),
     tag3       = $('.ios'),
     tag4       = $('.android'),
-    tag5       = $('.sjms'),
-    tag6       = $('.other');
-    
+    tag5       = $('.设计模式'),
+    tag6       = $('.其他');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
@@ -150,3 +150,4 @@ function afterPjax() {
   }check();
   container.scroll(check);
 }afterPjax();
+

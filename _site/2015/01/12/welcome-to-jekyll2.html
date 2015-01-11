@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>{{ page.title }}</title>
+    <title>test</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -38,16 +38,20 @@
         </form>
 
         <nav id="pl__container">
-        {% for post in site.posts %}
-          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
-        {% endfor %}
+        
+          <a class=" pl__all" href="/2015/01/12/welcome-to-jekyll2.html"><span class="pl__circle"></span><span class="pl__title">test</span><span class="pl__date">Jan 2015</span></a>
+        
+          <a class=" pl__all" href="/2015/01/12/welcome-to-jekyll.html"><span class="pl__circle"></span><span class="pl__title">Hello world</span><span class="pl__date">Jan 2015</span></a>
+        
         </nav>
       </div> <!-- end #posts-list -->
     </aside> <!-- end #sidebar -->
 
     <div id="post">
       <div id="pjax">
-        {{ content }}
+        <h3 id="zhengyihaos-blog">Zhengyihao’s Blog</h3>
+<p>Hello, I’m Zhengyihao, and this is my test Blog, best wishes to you !</p>
+
       </div> <!-- end #pjax -->
 
       <div id="post__toc-trigger">
