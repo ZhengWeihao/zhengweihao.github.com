@@ -12,11 +12,11 @@ if ($(window).width() <= 1280) {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.place_your_tag_name_here'),
-    tag3       = $('.place_your_tag_name_here'),
-    tag4       = $('.place_your_tag_name_here'),
-    tag5       = $('.place_your_tag_name_here'),
-    tag6       = $('.place_your_tag_name_here');
+    tag2       = $('.java'),
+    tag3       = $('.ios'),
+    tag4       = $('.android'),
+    tag5       = $('.设计模式'),
+    tag6       = $('.其他');
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
