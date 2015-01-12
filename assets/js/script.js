@@ -16,7 +16,7 @@ if ($(window).width() <= 1280) {
     tag4       = $('.android'),
     tag5       = $('.sjms'),
     tag6       = $('.other');
-    
+
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
@@ -131,8 +131,8 @@ function afterPjax() {
 
   // Lazy Loading Disqus
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
-  var ds_loaded = false,
-      top = $('#disqus_thread').offset().top;
+  var ds_loaded = false;
+      //top = $('#disqus_thread').offset().top;
       identifier = $('#post__title').data('identifier');
   window.disqus_shortname = '';
   window.disqus_identifier = identifier;

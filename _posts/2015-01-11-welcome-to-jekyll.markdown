@@ -2,7 +2,7 @@
 layout: index
 title:  "Hello world"
 date:  2015-01-11 20:10:45
-tags: [java]
+categories: [ios]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
