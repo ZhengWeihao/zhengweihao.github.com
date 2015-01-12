@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 12 Jan 2015 22:08:27 +0800</pubDate>
-    <lastBuildDate>Mon, 12 Jan 2015 22:08:27 +0800</lastBuildDate>
+    <pubDate>Mon, 12 Jan 2015 22:25:00 +0800</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 22:25:00 +0800</lastBuildDate>
 
     
     <item>
@@ -16,9 +16,19 @@
       <pubDate>13 Jan 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/2015/01/13/HelloWorld</guid>
-      <description>&lt;p&gt;　　一直想在Github上搭建个个人博客，来做一些学习及生活方面的笔记，今天终于是实现了。建立博客的原因，一方面是供自己回忆与归纳整理，另一方面也作为与朋友们分享的一些内容，希望能够共同学习，共同进步。
-　　技术实现主要是通过Ruby的Jekyll框架（搭配3-Jekyll皮肤），在本地写好MarkDown笔记后编译同步到Github空间来发布。
-　　内容不出意外将以Java知识为主，也会记录一些自己编程的思考与学习笔记，当然也会有一些好用工具的分享，以及部分生活娱乐方面的分享，希望内容将能日渐充实起来，也能够分享出一些精彩的内容。&lt;/p&gt;
+      <description>&lt;h2 id=&quot;hello-world-&quot;&gt;Hello World !&lt;/h2&gt;
+&lt;p&gt;===
+* 一直想在Github上搭建个个人博客，来做一些学习及生活方面的笔记，今天终于是实现了。建立博客的原因，一方面是供自己回忆与归纳整理，另一方面也作为与朋友们分享的一些内容，希望能够共同学习，共同进步。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;技术实现主要是通过Ruby的Jekyll框架（搭配3-Jekyll皮肤），在本地写好MarkDown笔记后编译同步到Github空间来发布&lt;code&gt;（想学来找我啊）&lt;/code&gt;。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;内容不出意外将以Java知识为主，也会记录一些自己对编程的思考与学习笔记，当然也会有一些好用工具的分享，以及部分生活娱乐方面的分享，希望内容将能日渐充实起来，也希望能够分享出一些精彩的内容。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
     </item>
     
