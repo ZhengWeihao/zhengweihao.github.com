@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+	<title>幸运大抽奖好了</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#block').css('margin-top', ($(window).height()-$block.height())/2-50).css('margin-left', ($(window).width()-$block.width())/2);
+		$('#background').css({'height':$(window).height(), 'width':$(window).width()});
+	});
+	</script>
+	<style type="text/css">
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	#background {
+		background: url('images/bg.jpeg');
+		background-size: 800px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #EA0200;
+		position: absolute;
+		z-index: 0;
+	}
+	#block {
+		width: 300px;
+		background-color: rgba(49, 49, 49, 0.31);
+		padding: 20px;
+		word-wrap: break-word;
+		font-size: 14px;
+		color: #FFF;
+		display: inline-block;
+		position: absolute;
+		z-index: 1;
+	}
+	#block > input {
+		width: 70px;
+	}
+	#stage {
+		width: 200px;
+		height: 200px;
+		font-size: 100px;
+		line-height: 200px;
+		text-align: center;
+		background-color: #EA0200;
+		margin: 0 auto;
+		display: block;
+		color: #FFF;
+		border-radius: 0px;
+		border: solid 0px #FFF;
+	}
+	.inline-block {
+		display: inline-block;
+	}
+	</style>
+</head>
+<body>
+<div id="background"></div>
+<div id="block">
+	<div id="stage" onclick="$array.toggle()"></div><br/>
+	摇号范围：<input id="rang-start" name="game-range" value="1" />&nbsp;-&nbsp;<input id="rang-end" name="game-range" value="20" /><button onclick="genArray()">重置数组</button><br/>
+	<button onclick="play()">摇奖/停止</button>
+	<p id="array" style="display:none;"></p>
+	<p id="result"></p>
+</div>
+<script type="text/javascript">
+	var range = [];//抽奖数组
+	var prize = [];//中奖数组
+
+	var $block = $('#block');
+	var $stage = $('#stage');//舞台
+	var $array = $('#array');//数组显示框
+	var $result = $('#result');//结果显示框
+	var $rs = $('#rang-start');//抽奖区间首端
+	var $re = $('#rang-start');//抽奖区间尾端
+
+	var rs = 0;
+	var re = 0;
+	var tester = new RegExp("^[0-9]*$");
+	$('input[name="game-range"]').on('change', function(){
+		var v = $(this).val().trim();
+		if(tester.test(v)) {
+			var idStr = $(this).attr('id');
+			if(idStr == 'rang-start') {
+				rs = $(this).val();
+			} else {
+				re = $(this).val();
+			}
+		} else {
+			var idStr = $(this).attr('id');
+			if(idStr == 'rang-start') {
+				$(this).val(rs);
+			} else {
+				$(this).val(re);
+			}
+			alert('输入的啥玩意儿，看不懂');
+		}
+	});
+	$('input[name="game-range"]').change();
+
+	//展示结果信息
+	function msg() {
+		$array.html('摇号数组：<br/>' + range.join());
+		$result.html('摇中号码：<br/>' + prize.join());
+	}
+	//产生数组
+	var inGen = false;
+	function genArray() {
+		if(inGen) return;
+
+		ingen = true;
+		range = [];
+		prize = [];
+		rs = parseInt(rs);
+		re = parseInt(re);
+
+		for(var index=rs; index<=re; index++) {
+			range.push(index);
+		}
+		//打乱数组
+		range.sort(function(){ return 0.5 - Math.random() })
+		console.log(range);
+
+		inGen=false;
+		if(range.length <= 1) {
+			alert('一个数字就不用再摇了吧');
+			return;
+		}
+		msg();
+	}
+	genArray(); 
+
+	//触发函数
+	var inGame = false;//是否在转动
+	var mainInterval;
+	function play() {
+		if(inGame) {
+			inGame = false;
+		} else {
+			if(range.length <= 0) {
+				alert('没号了，加几个进来呗');
+				return;
+			}
+
+			inGame = true;
+			mainInterval = self.setInterval('main()', 50);
+		}
+	}
+
+	//主函数
+	var exe_i = 0;//当前执行到的下标
+	function main() {
+		var cur = range[exe_i];
+		//显示数组内容
+		$stage.html(cur);
+
+		if(inGame) {//继续干活
+			exe_i++;
+			if(exe_i >= range.length) exe_i = 0;
+		} else {//结束游戏
+			//操作数据
+			prize.push(cur);
+			range.splice(exe_i, 1);
+
+			//显示结果
+			console.log('下标:' + exe_i + ';数字:' + cur);
+			alert('摇中号码：' + cur);
+			msg();
+
+			//重置标记
+			window.clearInterval(mainInterval);
+			exe_i = 0;
+		}
+	}
+</script>
+</body>
+</html>
