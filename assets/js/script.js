@@ -13,10 +13,11 @@ if ($(window).width() <= 1280) {
     tag1       = $('.pl__all'),
     tag2       = $('.java'),
     tag3       = $('.swift'),
-    tag4       = $('.thought'),
-    tag5       = $('.soft'),
-    tag6       = $('.life')
-    tag7       = $('.other');
+    tag4       = $('.font'),
+    tag5       = $('.thought'),
+    tag6       = $('.soft'),
+    tag7       = $('.life')
+    tag8       = $('.other');
 
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
@@ -31,7 +32,7 @@ var clickHandler = function(k) {
     window['tag'+k].delay(50).fadeIn(350);
   }
 };
-for (var i = 1; i <= 7; i++) {
+for (var i = 1; i <= 8; i++) {
   $('#js-label' + i).on('click', clickHandler(i));
 }
 
