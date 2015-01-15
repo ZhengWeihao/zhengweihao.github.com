@@ -26,44 +26,48 @@ categories: [other]
 		var inGame = false;//旗帜变量
 		var exe_i = 0;//当前执行到的下标
 		function main() {
-			var cur = range[exe_i];//当前执行到得数字
-			
-			//显示当前数字到显示框
-			$stage.html(cur);
-			if(inGame) {//继续下个数字
+			if(inGame) {//继续执行
+				//操作数组下标
 				exe_i++;
 				if(exe_i >= range.length) exe_i = 0;
-			} else {//结束摇奖
-				//将当前数字添加到中奖数组，并从号码数组中移除
+
+				//显示数组内容
+				$stage.html(range[exe_i]);
+
+				//数组长度不够时自动结束
+				if(range.length <= 1) inGame = false;
+			} else {//结束游戏
+				var cur = range[exe_i];//当前号码
+
+				//更新数组数据
 				prize.push(cur);
 				range.splice(exe_i, 1);
-				
-				//显示结果操作
+
+				//显示结果
+				console.log('下标:' + exe_i + ';数字:' + cur);
+				alert('摇中号码：' + cur);
 				msg();
 
-				//重置各变量
+				//停止定时任务
 				window.clearInterval(mainInterval);
-				exe_i = 0;
-				
-				alert('摇中号码：' + cur);
 			}
 		}
 
 	　　有了主函数，工具已经完成了一大半，现在还需要一个触发的函数作为开始与停止操作的执行者。点击“开始”按钮时修改状态位为开始状态并开始定时执行主函数，而点击“停止”按钮时修改旗帜变量状态位为停止状态，主函数会根据状态为进入到停止操作。实现如下：
 
 		//触发函数
-		var mainInterval;//定时执行的标识，通过它停止定时执行的任务
+		var mainInterval;//定时执行任务标识，通过它可以取消定时执行
 		function play() {
-			if(inGame) {//摇号中点击按钮 -> 切换状态位为停止
+			if(inGame) {//执行时触发 -> 停止
 				inGame = false;
-			} else {//未在摇号中 -> 开始摇号
-				//检查运行环境
+			} else {//非执行状态触发 -> 开始
+				//检查执行环境
 				if(range.length <= 0) {
 					alert('没号了，加几个进来呗');
 					return;
 				}
 				
-				//开始摇号
+				//开始执行
 				inGame = true;
 				mainInterval = self.setInterval('main()', 50);
 			}
