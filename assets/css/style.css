@@ -45,7 +45,13 @@ a {
   -moz-transition: color .35s;
   -ms-transition: color .35s;
   -o-transition: color .35s;
-  transition: color .35s; }
+  transition: color .35s;
+}
+
+#post a {
+  color: #33caa6;
+  text-decoration:underline;
+}
 
 /*---------------------------------*\
    Sidebar => Tags & Posts List
