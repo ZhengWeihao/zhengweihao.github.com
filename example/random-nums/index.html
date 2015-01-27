@@ -17,12 +17,19 @@
 		margin: 0;
 		padding: 0;
 	}
+	button {
+		border: 0;
+		background: rgba(0, 0, 0, 0.5);
+		color: #FFF;
+		border-radius: 5px;
+		padding: 3px 7px;
+	}
 	#background {
-		background: url('images/bg.jpeg');
-		background-size: 800px;
+		background: url('images/bg_pink.jpeg');
+		/* background-size: 800px;//原适应屏幕 */
+		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-color: #EA0200;
 		position: absolute;
 		z-index: 0;
 	}
@@ -38,8 +45,8 @@
 		z-index: 1;
 		border: solid 1px #361919;
 	}
-	#block > input {
-		width: 70px;
+	#range-nums > input {
+		width: 60px;
 	}
 	#stage {
 		width: 200px;
@@ -47,24 +54,76 @@
 		font-size: 100px;
 		line-height: 200px;
 		text-align: center;
-		background-color: #EA0200;
-		margin: 0 auto;
-		display: block;
+		background-color: #ECA5A5;
+		display: inline-block;
 		color: #FFF;
 		border-radius: 0px;
 		border: dashed 1px #FFA3A3;
+		float: left;
+	}
+	#theme-control-l, #theme-control-r {
+		width:49px;
+		height:202px;
+		line-height: 200px;
+		display: inline-block;
+		text-align: center;
+		float: left;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	#theme-control-l {
+		border-radius: 5px 0 0 5px;
+	}
+	#theme-control-r {
+		border-radius: 0 5px 5px 0;
+	}
+	#theme-control-l > i,#theme-control-r > i {
+    height: 0;
+		width: 0;
+		overflow: hidden;
+		font-size: 0;
+		line-height: 0;
+		border-style: solid;
+		border-width: 5px;
+		top: 97px;
+	}
+	#theme-control-l > i {
+		border-color: transparent #FFF transparent transparent;
+		right: 0;
+	}
+	#theme-control-r > i {
+		border-color: transparent transparent transparent #FFF;
+		left: 0;
 	}
 	.inline-block {
 		display: inline-block;
+	}
+	#control-panel {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	#play {
+		padding: 10px 20px;
+		margin-top: 20px;
 	}
 	</style>
 </head>
 <body>
 <div id="background"></div>
 <div id="block">
-	<div id="stage" onclick="$array.toggle()"></div><br/>
-	摇号范围：<input id="rang-start" name="game-range" value="1" />&nbsp;-&nbsp;<input id="rang-end" name="game-range" value="20" /><button onclick="genArray()">重置数组</button><br/>
-	<button onclick="play()">摇奖/停止</button>
+	<!-- 显示框及换肤按钮 -->
+	<div id="theme-control-l" onclick="theme_control_l()"><i></i></div>
+	<div id="stage" onclick="toggle_options()"></div>
+	<div id="theme-control-r" onclick="theme_control_r()"><i></i></div>
+
+	<!-- 输入框及操作按钮 -->
+	<div id="control-panel">
+		<button id="play" onclick="play()">摇奖/停止</button>
+	</div>
+	<p id="range-nums" style="display:none;">
+		摇号范围：<input id="rang-start" name="game-range" value="1" />&nbsp;-&nbsp;<input id="rang-end" name="game-range" value="20" />
+		<button id="gen-array" onclick="genArray()">重置数组</button>
+	</p>
 	<p id="array" style="display:none;"></p>
 	<p id="result"></p>
 </div>
@@ -72,8 +131,10 @@
 	var range = [];//号码数组
 	var prize = [];//中奖数组
 
+	var $background = $('#background');
 	var $block = $('#block');
 	var $stage = $('#stage');//舞台
+	var $r_nums = $('#range-nums');//摇号范围
 	var $array = $('#array');//数组显示框
 	var $result = $('#result');//结果显示框
 	var $rs = $('#rang-start');//抽奖区间首端
@@ -82,6 +143,7 @@
 	var rs = 0;
 	var re = 0;
 	var tester = new RegExp("^[0-9]*$");
+	//输入框赋值校验
 	$('input[name="game-range"]').on('change', function(){
 		var v = $(this).val().trim();
 		if(tester.test(v)) {
@@ -103,15 +165,26 @@
 	});
 	$('input[name="game-range"]').change();
 
+	//舞台点击显示设置框
+	function toggle_options() {
+		$array.toggle();
+		$r_nums.toggle();
+	}
+
 	//展示结果信息
 	function msg() {
 		$array.html('摇号数组：<br/>' + range.join());
 		$result.html('摇中号码：<br/>' + prize.join());
 	}
+	//取消按钮点击后的焦点集中，以防快捷键冲突
+	function blur_doms() {
+		$('#play').blur();
+    $('#gen-array').blur();
+	}
 	//产生数组
 	var inGen = false;
 	function genArray() {
-		if(inGen) return;
+		if(inGen || inGame) return;
 
 		ingen = true;
 		range = [];
@@ -133,6 +206,7 @@
 			return;
 		}
 		msg();
+		blur_doms();
 	}
 	genArray(); 
 
@@ -151,6 +225,7 @@
 			inGame = true;
 			mainInterval = self.setInterval('main()', 50);
 		}
+		blur_doms();
 	}
 
 	//主函数
@@ -181,6 +256,46 @@
 			//停止定时任务
 			window.clearInterval(mainInterval);
 		}
+	}
+
+	//注册快捷键
+	document.onkeyup = function(event) {
+		var keyCode = event.keyCode||event.which;
+		switch(keyCode) {
+		case 32://空格
+			play();
+			break;      
+		}
+	}
+
+	//皮肤设置相关
+	var themes = [{p:'pink',c:'#ECA5A5'},{p:'yellow',c:'#FFE25F'},{p:'blue',c:'#406DD9'},{p:'red',c:'#861717'}];//皮肤套餐[{pic,color}]
+	var theme_i = 3;//当前皮肤下标
+	//双效当前下标对应皮肤
+	function change_theme() {
+		var theme = themes[theme_i];
+		$background.css({
+			'background': 'url("images/bg_' + theme.p + '.jpeg")',
+			'background-size': '100%',
+			'background-repeat': 'no-repeat',
+			'background-position': 'center'
+		});
+		$stage.css('background-color', theme.c);
+	}
+	change_theme();
+	//当前皮肤下标左移
+	function theme_control_l() {
+		if(--theme_i < 0) {
+			theme_i = themes.length - 1;
+		}
+		change_theme();
+	}
+	//当前皮肤下标右移
+	function theme_control_r() {
+		if(++theme_i > themes.length - 1) {
+			theme_i = 0;
+		}
+		change_theme();
 	}
 </script>
 </body>
