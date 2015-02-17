@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/imgs/fav.ico">
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>年会摇奖小工具</title>
+    <title>JQuery+HTML实现年会摇奖小工具</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -42,7 +42,9 @@
 
         <nav id="pl__container">
         
-          <a class="other pl__all" href="/other/2015/01/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">年会摇奖小工具</span><span class="pl__date">Jan 2015</span></a>
+          <a class="java spring springmvc pl__all" href="/java/spring/springmvc/2015/02/16/spring-mvc-freemark.html"><span class="pl__circle"></span><span class="pl__title">SpringMVC集成Freemark及JSON格式输出</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="other pl__all" href="/other/2015/02/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">JQuery+HTML实现年会摇奖小工具</span><span class="pl__date">Feb 2015</span></a>
         
           <a class="pl__all" href="/2015/01/13/HelloWorld.html"><span class="pl__circle"></span><span class="pl__title">第一篇文章</span><span class="pl__date">Jan 2015</span></a>
         
@@ -52,7 +54,7 @@
 
     <div id="post">
       <div id="pjax">
-        <h2 id="section">年会摇奖小工具</h2>
+        <h2 id="jqueryhtml">JQuery+HTML实现年会摇奖小工具</h2>
 <hr />
 
 <blockquote>
@@ -106,7 +108,7 @@
   }
 </code></pre>
 
-    <p>　　有了主函数，工具已经完成了一大半，现在还需要一个触发的函数作为开始与停止操作的执行者。点击“开始”按钮时修改状态位为开始状态并开始定时执行主函数，而点击“停止”按钮时修改旗帜变量状态位为停止状态，主函数会根据状态为进入到停止操作。实现如下：</p>
+    <p>　　有了主函数，工具已经完成了一大半，现在还需要一个触发的函数作为开始与停止操作的触发者。点击“开始”按钮时修改状态位为开始状态并开始定时执行主函数，而点击“停止”按钮时修改旗帜变量状态位为停止状态，主函数会根据状态为进入到停止操作。实现如下：</p>
 
     <pre><code>  //触发函数
   var mainInterval;//定时执行任务标识，通过它可以取消定时执行
