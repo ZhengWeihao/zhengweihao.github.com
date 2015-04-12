@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 13 Apr 2015 00:03:10 +0800</pubDate>
-    <lastBuildDate>Mon, 13 Apr 2015 00:03:10 +0800</lastBuildDate>
+    <pubDate>Mon, 13 Apr 2015 00:14:09 +0800</pubDate>
+    <lastBuildDate>Mon, 13 Apr 2015 00:14:09 +0800</lastBuildDate>
 
     
     <item>
@@ -28,7 +28,7 @@
   &lt;li&gt;安装&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;　　Cordova的安装可以选择 &lt;em&gt;下载安装&lt;/em&gt; 及 &lt;em&gt;使用node安装工具&lt;/em&gt; 两种方式，而我采用了node安装的方式，所以需要先安装&lt;a href=&quot;https://nodejs.org&quot; title=&quot;nodejs&quot;&gt;nodejs&lt;/a&gt;，之后使用npm命令安装：&lt;/p&gt;
+&lt;p&gt;　　Cordova的安装可以选择&lt;code&gt;下载安装&lt;/code&gt;及&lt;code&gt;使用node安装工具&lt;/code&gt;两种方式，而我采用了node安装的方式，所以需要先安装&lt;a href=&quot;https://nodejs.org&quot; title=&quot;nodejs&quot;&gt;nodejs&lt;/a&gt;，之后使用npm命令安装：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;	// MACOS
 	$ sudo npm install -g cordova
@@ -37,6 +37,10 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;　　命令安装完之后，在node目录下就会产生cordova的文件夹了，再将它配置到环境变量中之后就支持cordova命令了。&lt;/p&gt;
+
+&lt;p&gt;　　但是还没结束，因为Cordova编译是通过ant来进行的，所以还需要安装ant，下载&lt;a href=&quot;http://ant.apache.org&quot; title=&quot;ant&quot;&gt;ant&lt;/a&gt;并配置环境变量即可。&lt;/p&gt;
+
+&lt;p&gt;　　而如果还需要开发Android应用，则还需要下载安装&lt;a href=&quot;http://developer.android.com/tools/help/adt.html&quot; title=&quot;Android Development Tools&quot;&gt;安卓开发工具&lt;/a&gt;，打开SDK Manager下载Cordova需要的SDK版本（当前使用21版本），并配置ANDROID_HOME环境变量即可。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;hello world&lt;/li&gt;
@@ -58,7 +62,7 @@
 
 &lt;blockquote&gt;
 
-  &lt;p&gt;　　今天就先到这里，有空再从 &lt;em&gt;开发过程&lt;/em&gt; 及 &lt;em&gt;心得体会&lt;/em&gt; 两方面，对本文进行补充。&lt;/p&gt;
+  &lt;p&gt;　　今天就先到这里，有空再从&lt;code&gt;开发过程&lt;/code&gt;及&lt;code&gt;心得体会&lt;/code&gt;两方面，对本文进行补充。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>

@@ -13,7 +13,7 @@ categories: [front, other, cordova]
 
 * 安装
 
-　　Cordova的安装可以选择 *下载安装* 及 *使用node安装工具* 两种方式，而我采用了node安装的方式，所以需要先安装[nodejs](https://nodejs.org "nodejs")，之后使用npm命令安装：
+　　Cordova的安装可以选择`下载安装`及`使用node安装工具`两种方式，而我采用了node安装的方式，所以需要先安装[nodejs](https://nodejs.org "nodejs")，之后使用npm命令安装：
 
 		// MACOS
 		$ sudo npm install -g cordova
@@ -22,6 +22,10 @@ categories: [front, other, cordova]
 
 
 　　命令安装完之后，在node目录下就会产生cordova的文件夹了，再将它配置到环境变量中之后就支持cordova命令了。
+
+　　但是还没结束，因为Cordova编译是通过ant来进行的，所以还需要安装ant，下载[ant](http://ant.apache.org "ant")并配置环境变量即可。
+
+　　而如果还需要开发Android应用，则还需要下载安装[安卓开发工具](http://developer.android.com/tools/help/adt.html "Android Development Tools")，打开SDK Manager下载Cordova需要的SDK版本（当前使用21版本），并配置ANDROID_HOME环境变量即可。
 
 * hello world
 
@@ -39,4 +43,4 @@ categories: [front, other, cordova]
 		cordova build -release
 
 >
-　　今天就先到这里，有空再从 *开发过程* 及 *心得体会* 两方面，对本文进行补充。
+　　今天就先到这里，有空再从`开发过程`及`心得体会`两方面，对本文进行补充。
