@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/imgs/fav.ico">
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>Zhengyihao's Blog</title>
+    <title>使用Cordova开发项目的一些心得体会</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -56,9 +56,51 @@
 
     <div id="post">
       <div id="pjax">
-        <article id="post__content">
-  <h1 id="post__title">Welcome</h1>
-</article> <!-- end #post__content -->
+        <h2 id="cordova">使用Cordova开发项目的一些心得体会</h2>
+<hr />
+<blockquote>
+  <p>　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。</p>
+</blockquote>
+
+<h3 id="cordova-1">Cordova基本开发环境</h3>
+
+<ul>
+  <li>安装</li>
+</ul>
+
+<p>　　Cordova的安装可以选择 <em>下载安装</em> 及 <em>使用node安装工具</em> 两种方式，而我采用了node安装的方式，所以需要先安装<a href="https://nodejs.org" title="nodejs">nodejs</a>，之后使用npm命令安装：</p>
+
+<pre><code>	// MACOS
+	$ sudo npm install -g cordova
+	// windows
+	C:\&gt;npm install -g cordova
+</code></pre>
+
+<p>　　命令安装完之后，在node目录下就会产生cordova的文件夹了，再将它配置到环境变量中之后就支持cordova命令了。</p>
+
+<ul>
+  <li>hello world</li>
+</ul>
+
+<p>　　基本操作命令比较简单就直接记录命令了：</p>
+
+<pre><code>	// 创建项目
+	cordova create {project name} [{project package} {app name}]
+	// 添加环境
+	cordova platform add [android|ios|...]
+	// 添加插件
+	cordova plugin add {plugin package}
+	// 运行环境
+	cordova run [android|ios|...]
+	// 打包项目（需要先将证书文件拷到ant-build目录）
+	cordova build -release
+</code></pre>
+
+<blockquote>
+
+  <p>　　今天就先到这里，有空再从 <em>开发过程</em> 及 <em>心得体会</em> 两方面，对本文进行补充。</p>
+</blockquote>
+
       </div> <!-- end #pjax -->
 
       <div id="post__toc-trigger">
