@@ -1250,3 +1250,12 @@ pre > code {
   color: #2aa198; }
 
 /* Literal.Number.Integer.Long */
+
+div.adv {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
