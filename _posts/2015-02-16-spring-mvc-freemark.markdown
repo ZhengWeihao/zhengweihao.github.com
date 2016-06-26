@@ -5,7 +5,7 @@ date: 2015-02-16 12:59:39
 categories: [backend, java, spring, springMVC]
 ---
 
-##SpringMVC集成Freemark及JSON格式输出
+SpringMVC集成Freemark及JSON格式输出
 ---
 > 最近做项目需要使用SpringMVC代替Struts2，因此进行了对SpringMVC的一些初步学习，而在以前的项目中，也是对Freemark比较熟悉，所以也做了整合Freemark的一些工作，在这里做个记录。
 

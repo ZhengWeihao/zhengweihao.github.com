@@ -5,7 +5,7 @@ date: 2015-03-19 18:13:40
 categories: [frontend, cordova]
 ---
 
-##使用Cordova开发项目的一些心得体会
+使用Cordova开发项目的一些心得体会
 ---
 > 　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。
 

@@ -1,11 +1,11 @@
 ---
 layout: index
 title: JQuery+CSS3实现雪花飘落效果
-date: 2016-06-26 11:59:12
-categories: [frontend]
+date: 2015-03-19 18:13:40
+categories: [frontend, cordova]
 ---
 
-## JQuery+CSS3实现雪花飘落效果
+JQuery+CSS3实现雪花飘落效果
 ---
 
 > 想到做这个效果的想法来自于去年年底，淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo，但因为比较懒，直到现在才想到推到blog上。
