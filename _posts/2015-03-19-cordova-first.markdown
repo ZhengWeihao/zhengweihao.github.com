@@ -2,7 +2,7 @@
 layout: index
 title: 使用Cordova开发项目的一些心得体会
 date: 2015-03-19 18:13:40
-categories: [front, other, cordova]
+categories: [frontend, cordova]
 ---
 
 ##使用Cordova开发项目的一些心得体会

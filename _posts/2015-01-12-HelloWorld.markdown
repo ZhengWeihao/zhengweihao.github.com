@@ -2,7 +2,7 @@
 layout: index
 title:  第一篇文章
 date:  2015-01-12 21:52:48
-categories: []
+categories: [other]
 ---
 
 ##Hello World

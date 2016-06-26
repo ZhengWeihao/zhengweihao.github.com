@@ -6,16 +6,16 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 01 Mar 2016 21:23:42 +0800</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2016 21:23:42 +0800</lastBuildDate>
+    <pubDate>Sun, 26 Jun 2016 11:50:54 +0800</pubDate>
+    <lastBuildDate>Sun, 26 Jun 2016 11:50:54 +0800</lastBuildDate>
 
     
     <item>
       <title>使用Cordova开发项目的一些心得体会</title>
-      <link>place_your_blog_url_here/front/other/cordova/2015/03/20/cordova-first.html</link>
+      <link>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first.html</link>
       <pubDate>20 Mar 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/front/other/cordova/2015/03/20/cordova-first</guid>
+      <guid>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first</guid>
       <description>&lt;h2 id=&quot;cordova&quot;&gt;##使用Cordova开发项目的一些心得体会&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。&lt;/p&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>SpringMVC集成Freemark及JSON格式输出</title>
-      <link>place_your_blog_url_here/java/spring/springmvc/2015/02/16/spring-mvc-freemark.html</link>
+      <link>place_your_blog_url_here/backend/java/spring/springmvc/2015/02/16/spring-mvc-freemark.html</link>
       <pubDate>16 Feb 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/java/spring/springmvc/2015/02/16/spring-mvc-freemark</guid>
+      <guid>place_your_blog_url_here/backend/java/spring/springmvc/2015/02/16/spring-mvc-freemark</guid>
       <description>&lt;h2 id=&quot;springmvcfreemarkjson&quot;&gt;##SpringMVC集成Freemark及JSON格式输出&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;最近做项目需要使用SpringMVC代替Struts2，因此进行了对SpringMVC的一些初步学习，而在以前的项目中，也是对Freemark比较熟悉，所以也做了整合Freemark的一些工作，在这里做个记录。&lt;/p&gt;
@@ -385,10 +385,10 @@
     
     <item>
       <title>JQuery+HTML实现年会摇奖小工具</title>
-      <link>place_your_blog_url_here/other/2015/02/16/random-nums-tool.html</link>
+      <link>place_your_blog_url_here/frontend/2015/02/16/random-nums-tool.html</link>
       <pubDate>16 Feb 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/other/2015/02/16/random-nums-tool</guid>
+      <guid>place_your_blog_url_here/frontend/2015/02/16/random-nums-tool</guid>
       <description>&lt;h2 id=&quot;jqueryhtml&quot;&gt;##JQuery+HTML实现年会摇奖小工具&lt;/h2&gt;
 
 &lt;blockquote&gt;
@@ -477,10 +477,10 @@
     
     <item>
       <title>第一篇文章</title>
-      <link>place_your_blog_url_here/2015/01/13/HelloWorld.html</link>
+      <link>place_your_blog_url_here/other/2015/01/13/HelloWorld.html</link>
       <pubDate>13 Jan 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/2015/01/13/HelloWorld</guid>
+      <guid>place_your_blog_url_here/other/2015/01/13/HelloWorld</guid>
       <description>&lt;h2 id=&quot;hello-world&quot;&gt;##Hello World&lt;/h2&gt;
 
 &lt;ul&gt;
