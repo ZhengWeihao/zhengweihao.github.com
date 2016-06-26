@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sun, 26 Jun 2016 17:18:44 +0800</pubDate>
-    <lastBuildDate>Sun, 26 Jun 2016 17:18:44 +0800</lastBuildDate>
+    <pubDate>Sun, 26 Jun 2016 17:21:22 +0800</pubDate>
+    <lastBuildDate>Sun, 26 Jun 2016 17:21:22 +0800</lastBuildDate>
 
     
     <item>
@@ -98,12 +98,12 @@
     </item>
     
     <item>
-      <title>使用Cordova开发项目的一些心得体会</title>
+      <title>Cordova开发笔记</title>
       <link>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first.html</link>
       <pubDate>20 Mar 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first</guid>
-      <description>&lt;h2 id=&quot;cordova&quot;&gt;使用Cordova开发项目的一些心得体会&lt;/h2&gt;
+      <description>&lt;h2 id=&quot;cordova&quot;&gt;Cordova开发笔记&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -145,11 +145,6 @@
 	// 打包项目（需要先将证书文件拷到ant-build目录）
 	cordova build -release
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-
-  &lt;p&gt;　　今天就先到这里，有空再从&lt;code&gt;开发过程&lt;/code&gt;及&lt;code&gt;心得体会&lt;/code&gt;两方面，对本文进行补充。&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
