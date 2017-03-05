@@ -14,7 +14,7 @@ if ($(window).width() <= 1280) {
     tag2       = $('.basic'),
     tag3       = $('.backend'),
     tag4       = $('.frontend'),
-    tag5       = $('.other');
+    tag5       = $('.lives');
 
 var sidebar    = $('#sidebar'),
     container  = $('#post'),
