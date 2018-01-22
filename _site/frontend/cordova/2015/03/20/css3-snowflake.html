@@ -17,10 +17,8 @@
 
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
-          <li id="js-label2" class="tags__li tags-btn">编程基础</li>
-          <li id="js-label3" class="tags__li tags-btn">后端技术</li>
-          <li id="js-label4" class="tags__li tags-btn">前端技术</li>
-          <li id="js-label5" class="tags__li tags-btn">其他</li>
+          <li id="js-label2" class="tags__li tags-btn">Java相关</li>
+          <li id="js-label3" class="tags__li tags-btn">摄影相关</li>
         </ul>
 
         <div id="tags__bottom">
@@ -38,6 +36,16 @@
 
         <nav id="pl__container">
         
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java pl__all" href="/java/2018/01/22/java-common.html"><span class="pl__circle"></span><span class="pl__title">Java常用操作笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java concurrent pl__all" href="/java/concurrent/2016/07/12/java-concurrent.html"><span class="pl__circle"></span><span class="pl__title">Java并发编程笔记</span><span class="pl__date">Jul 2016</span></a>
+        
+          <a class="osx system pl__all" href="/osx/system/2015/10/28/osx-operates.html"><span class="pl__circle"></span><span class="pl__title">OSX常用操作笔记</span><span class="pl__date">Oct 2015</span></a>
+        
           <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/css3-snowflake.html"><span class="pl__circle"></span><span class="pl__title">JQuery+CSS3实现雪花飘落效果</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/cordova-first.html"><span class="pl__circle"></span><span class="pl__title">Cordova开发笔记</span><span class="pl__date">Mar 2015</span></a>
@@ -46,90 +54,88 @@
         
           <a class="frontend pl__all" href="/frontend/2015/02/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">JQuery+HTML实现年会摇奖小工具</span><span class="pl__date">Feb 2015</span></a>
         
-          <a class="other pl__all" href="/other/2015/01/13/HelloWorld.html"><span class="pl__circle"></span><span class="pl__title">第一篇文章</span><span class="pl__date">Jan 2015</span></a>
-        
         </nav>
       </div> <!-- end #posts-list -->
     </aside> <!-- end #sidebar -->
 
     <div id="post">
       <div id="pjax">
-        <h2 id="jquerycss3">JQuery+CSS3实现雪花飘落效果</h2>
+        <h2 id="jquerycss3实现雪花飘落效果">JQuery+CSS3实现雪花飘落效果</h2>
 
 <blockquote>
-  <p>想到做这个效果的想法来自于去年年底，淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo，但因为比较懒，直到现在才想到推到blog上。</p>
+  <p>看到淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo。</p>
 </blockquote>
 
 <ul>
   <li>
     <p>预期效果：
-  产生漫天雪花，从天空飘落到地面，停留稍瞬后消融。</p>
+产生漫天雪花，从天空飘落到地面，停留稍瞬后消融。</p>
   </li>
   <li>
     <p>实现思路：
-  第一步是产生雪花，即产生div，并利用随机数，随机一定区间的数字作为div的宽高、透明度，并设置border-radius属性为宽高值，即可得到一片大小、透明度随机的雪花。之后将雪花位置设置在屏幕顶端，横向位置随机，即完成雪花的初始化。示例代码如下：</p>
+第一步是产生雪花，即产生div，并利用随机数，随机一定区间的数字作为div的宽高、透明度，并设置border-radius属性为宽高值，即可得到一片大小、透明度随机的雪花。之后将雪花位置设置在屏幕顶端，横向位置随机，即完成雪花的初始化。示例代码如下：</p>
 
-    <pre><code>  // 产生雪花dom
-  function snowflake(size, alpha, top, left) {
-      var s = document.createElement('div');
-      $(s).css({
-          'width': size,
-          'height': size,
-          'border-radius': size,
-          'background-color': 'rgba(255,255,255,' + alpha + ')',
-          'top': -50,
-          'left': left,
-      }).addClass('snowflake');
-      return s;
-  }
-
-  // 获取一片随机大小、透明度的雪花示例
-  var size = Math.random() * flakeSize + 2;
-  var alpha = Math.random() * 0.7 + 0.1;
-  var left = Math.random() * $(window).width();
-  var s = snowflake(size, alpha, 0, left);
+    <pre><code>// 产生雪花dom
+function snowflake(size, alpha, top, left) {
+	var s = document.createElement('div');
+	$(s).css({
+		'width': size,
+		'height': size,
+		'border-radius': size,
+		'background-color': 'rgba(255,255,255,' + alpha + ')',
+		'top': -50,
+		'left': left,
+	}).addClass('snowflake');
+	return s;
+}
+  	
+// 获取一片随机大小、透明度的雪花示例
+var size = Math.random() * flakeSize + 2;
+var alpha = Math.random() * 0.7 + 0.1;
+var left = Math.random() * $(window).width();
+var s = snowflake(size, alpha, 0, left);
 </code></pre>
 
     <p>产生雪花后，设置css3的transition属性，并将div移动到屏幕底部，即可开启动画效果。同时，雪花飘落后，停顿若干时长再将dom删除，即可达到雪花消融效果。示例代码如下：</p>
 
-    <pre><code>  .snowflake {
-      background-color: rgba(255, 255, 255, 0.5);
-      display: inline-block;
-      transition: top 2s;// 此处认为动画时间为2秒较为合适,实际情况中可自行调整
-      transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);// 设置动画的贝塞尔值,使得动画不显得生硬,具体值同样也可按个人喜好调整
-  }
-
-  // 利用setTimeout方法,延时消除雪花,melt的值即为雪花飘落后留存的时长
-  setTimeout(function() {
-      $s.remove();
-  }, 2000 + melt);
-
-  完成一片雪花的动画效果后，只要快速不停地循环这个，即能产生雪花不停飘落的效果了。示例代码如下：
-
-  var it = setInterval(function() {
-      // 初始化雪花
-      var id = 's_' + (++animateId);
-      var size = Math.random() * flakeSize + 2;
-      var alpha = Math.random() * 0.7 + 0.1;
-      var left = Math.random() * $(window).width();
-      var s = snowflake(size, alpha, 0, left);
-      var $s = $(s).attr('id', id);
-      $sky.get(0).appendChild(s);
-
-      // 雪花飘落并消融,延迟执行以确保dom已经生成好
-      setTimeout(function() {
-          $s.css('top', maxTop + (flakeSize - $s.width()) / 2);
-
-          setTimeout(function() {
-              $s.remove();
-          }, 2000 + melt);
-      }, 100);
-  }, rate);
+    <pre><code>.snowflake {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: inline-block;
+	transition: top 2s;// 此处认为动画时间为2秒较为合适,实际情况中可自行调整
+	transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);// 设置动画的贝塞尔值,使得动画不显得生硬,具体值同样也可按个人喜好调整
+}
+  	
+// 利用setTimeout方法,延时消除雪花,melt的值即为雪花飘落后留存的时长
+setTimeout(function() {
+	$s.remove();
+}, 2000 + melt);
+  	
+完成一片雪花的动画效果后，只要快速不停地循环这个，即能产生雪花不停飘落的效果了。示例代码如下：
+  	
+var it = setInterval(function() {
+	// 初始化雪花
+	var id = 's_' + (++animateId);
+	var size = Math.random() * flakeSize + 2;
+	var alpha = Math.random() * 0.7 + 0.1;
+	var left = Math.random() * $(window).width();
+	var s = snowflake(size, alpha, 0, left);
+	var $s = $(s).attr('id', id);
+	$sky.get(0).appendChild(s);
+  	
+	// 雪花飘落并消融,延迟执行以确保dom已经生成好
+	setTimeout(function() {
+		$s.css('top', maxTop + (flakeSize - $s.width()) / 2);
+  	
+		setTimeout(function() {
+			$s.remove();
+		}, 2000 + melt);
+	}, 100);
+}, rate);
 </code></pre>
   </li>
   <li>
     <p>结果展示：
-  进入页面随机开始频率为60ms，融化时长2s的动画，页面向下拖动可设置参数，<a href="/example/snowflake/index.html">点我查看页面</a>。</p>
+进入页面随机开始频率为60ms，融化时长2s的动画，页面向下拖动可设置参数，<a href="/example/snowflake/index.html">点我查看页面</a>。</p>
   </li>
 </ul>
 
@@ -150,11 +156,11 @@
     <script src="/assets/js/nprogress.js"></script>
     <script src="/assets/js/script.js"></script>
 
-    <!-- UpYun Advertise -->
+    <!-- UpYun Advertise
     <div class="adv">
     	<a href="http://www.upyun.com/">
     		<img src="/imgs/upyun_logo.png" />
     	</a>
-    </div>
+    </div> -->
   </body>
 </html>

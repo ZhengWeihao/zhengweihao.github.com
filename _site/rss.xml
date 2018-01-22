@@ -1,4 +1,66 @@
-<?xml version="1.0"?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="/imgs/fav.ico">
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    </style>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
+          <li id="js-label2" class="tags__li tags-btn">Java相关</li>
+          <li id="js-label3" class="tags__li tags-btn">摄影相关</li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:place_your_email_address_here" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+          <!-- NOTE: input field is disabled by default -->
+          <input id="search-input" type="text" placeholder="Search..." disabled >
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java pl__all" href="/java/2018/01/22/java-common.html"><span class="pl__circle"></span><span class="pl__title">Java常用操作笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java concurrent pl__all" href="/java/concurrent/2016/07/12/java-concurrent.html"><span class="pl__circle"></span><span class="pl__title">Java并发编程笔记</span><span class="pl__date">Jul 2016</span></a>
+        
+          <a class="osx system pl__all" href="/osx/system/2015/10/28/osx-operates.html"><span class="pl__circle"></span><span class="pl__title">OSX常用操作笔记</span><span class="pl__date">Oct 2015</span></a>
+        
+          <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/css3-snowflake.html"><span class="pl__circle"></span><span class="pl__title">JQuery+CSS3实现雪花飘落效果</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/cordova-first.html"><span class="pl__circle"></span><span class="pl__title">Cordova开发笔记</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="backend java spring springMVC pl__all" href="/backend/java/spring/springmvc/2015/02/16/spring-mvc-freemark.html"><span class="pl__circle"></span><span class="pl__title">SpringMVC集成Freemark及JSON格式输出</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="frontend pl__all" href="/frontend/2015/02/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">JQuery+HTML实现年会摇奖小工具</span><span class="pl__date">Feb 2015</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>place_your_blog_title_here</title>
@@ -6,9 +68,440 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sun, 26 Jun 2016 17:22:52 +0800</pubDate>
-    <lastBuildDate>Sun, 26 Jun 2016 17:22:52 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:34:34 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:34:34 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>常见照片风格总结</title>
+      <link>place_your_blog_url_here/java/jvm/2018/01/22/photo-styles-colors.html</link>
+      <pubDate>22 Jan 2018</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java/jvm/2018/01/22/photo-styles-colors</guid>
+      <description>&lt;h2 id=&quot;常见照片风格总结&quot;&gt;常见照片风格总结&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小清新：
+    &lt;ul&gt;
+      &lt;li&gt;整体调性：亮调、通透&lt;/li&gt;
+      &lt;li&gt;高光：青色、蓝色&lt;/li&gt;
+      &lt;li&gt;阴影：青色、蓝色、绿色&lt;/li&gt;
+      &lt;li&gt;整体感受：轻快明亮&lt;/li&gt;
+      &lt;li&gt;常见元素：蓝天、绿草、微风&lt;/li&gt;
+      &lt;li&gt;典型图例：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/小清新.jpg&quot; alt=&quot;小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/小清新2.jpg&quot; alt=&quot;小清新2&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;复古：
+    &lt;ul&gt;
+      &lt;li&gt;整体调性：暗调、偏灰、部分低饱和&lt;/li&gt;
+      &lt;li&gt;高光：青色、绿色、黄色&lt;/li&gt;
+      &lt;li&gt;阴影：青色、绿色、黄色&lt;/li&gt;
+      &lt;li&gt;整体感受：阴郁&lt;/li&gt;
+      &lt;li&gt;常见元素：老墙、老家具、木地板&lt;/li&gt;
+      &lt;li&gt;典型图例：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/复古.jpg&quot; alt=&quot;复古&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/复古2.jpg&quot; alt=&quot;复古2&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;日系：
+    &lt;ul&gt;
+      &lt;li&gt;整体调性：可轻微过曝&lt;/li&gt;
+      &lt;li&gt;高光：黄色&lt;/li&gt;
+      &lt;li&gt;阴影：青色、蓝色、绿色&lt;/li&gt;
+      &lt;li&gt;整体感受：干净、温暖&lt;/li&gt;
+      &lt;li&gt;常见元素：夕阳光&lt;/li&gt;
+      &lt;li&gt;典型图例：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/日系.jpg&quot; alt=&quot;日系&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/日系2.jpeg&quot; alt=&quot;日系2&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;港调：
+    &lt;ul&gt;
+      &lt;li&gt;整体调性：暗调、偏灰&lt;/li&gt;
+      &lt;li&gt;高光：棕色、黄色、洋红色&lt;/li&gt;
+      &lt;li&gt;阴影：棕色、黄色&lt;/li&gt;
+      &lt;li&gt;整体感受：老旧、浓郁&lt;/li&gt;
+      &lt;li&gt;常见元素：大波浪、旗袍/纱裙&lt;/li&gt;
+      &lt;li&gt;典型图例：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/港调.jpg&quot; alt=&quot;港调&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/港调2.png&quot; alt=&quot;港调2&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;欧美：
+    &lt;ul&gt;
+      &lt;li&gt;整体调性：暗调&lt;/li&gt;
+      &lt;li&gt;高光：橙色、黄色&lt;/li&gt;
+      &lt;li&gt;阴影：蓝色、青色、绿色&lt;/li&gt;
+      &lt;li&gt;整体感受：个性另类&lt;/li&gt;
+      &lt;li&gt;常见元素：灰墙、高楼&lt;/li&gt;
+      &lt;li&gt;典型图例：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/欧美.jpg&quot; alt=&quot;欧美&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/欧美2.jpg&quot; alt=&quot;欧美2&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;色彩感受：
+    &lt;ul&gt;
+      &lt;li&gt;活力：红色、橙色、黄色（高饱和、高明度）&lt;/li&gt;
+      &lt;li&gt;轻盈：蓝色（高饱和、高明度）&lt;/li&gt;
+      &lt;li&gt;怀旧：棕色、绿色（高饱和、低明度）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注：&lt;/p&gt;
+
+&lt;p&gt;　　以上内容仅个人总结，仅供参考。参考图片均来自网络，侵删。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JVM笔记</title>
+      <link>place_your_blog_url_here/java/jvm/2018/01/22/java-jvm.markdown.html</link>
+      <pubDate>22 Jan 2018</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java/jvm/2018/01/22/java-jvm.markdown</guid>
+      <description>&lt;h2 id=&quot;jvm笔记&quot;&gt;JVM笔记&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;抽象结构：
+    &lt;ul&gt;
+      &lt;li&gt;实例域、静态域、数据 -&amp;gt; 堆内存（线程之间共享）&lt;/li&gt;
+      &lt;li&gt;局部变量、方法定义的参数 -&amp;gt; 虚拟机栈&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Java常用操作笔记</title>
+      <link>place_your_blog_url_here/java/2018/01/22/java-common.html</link>
+      <pubDate>22 Jan 2018</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java/2018/01/22/java-common</guid>
+      <description>&lt;h2 id=&quot;java常用操作笔记&quot;&gt;Java常用操作笔记&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;查看字节码：
+    &lt;ul&gt;
+      &lt;li&gt;javap -v CLASS_FILE_NAME&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Java并发编程笔记</title>
+      <link>place_your_blog_url_here/java/concurrent/2016/07/12/java-concurrent.html</link>
+      <pubDate>12 Jul 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java/concurrent/2016/07/12/java-concurrent</guid>
+      <description>&lt;h2 id=&quot;java并发编程笔记&quot;&gt;Java并发编程笔记&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基本概念：
+    &lt;ul&gt;
+      &lt;li&gt;进程：程序&lt;/li&gt;
+      &lt;li&gt;线程：进程中负责执行程序的执行单元&lt;/li&gt;
+      &lt;li&gt;并发：以可独立执行的进程集合的方式编程&lt;/li&gt;
+      &lt;li&gt;并行：以可同时执行的计算指令方式编程&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多线程实现原理：
+    &lt;ul&gt;
+      &lt;li&gt;时间片调度&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;优点：
+    &lt;ul&gt;
+      &lt;li&gt;提高资源利用率&lt;/li&gt;
+      &lt;li&gt;提高程序性能&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;风险：
+    &lt;ul&gt;
+      &lt;li&gt;死锁&lt;/li&gt;
+      &lt;li&gt;上下文切换&lt;/li&gt;
+      &lt;li&gt;线程安全&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;实现方式：
+    &lt;ul&gt;
+      &lt;li&gt;继承Thread类：单继承&lt;/li&gt;
+      &lt;li&gt;实现Runnable接口：多实现&lt;/li&gt;
+      &lt;li&gt;ExecutorService&lt;/li&gt;
+      &lt;li&gt;Callable接口、Future类实现带返回值的多线程操作&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;生命周期：
+    &lt;ul&gt;
+      &lt;li&gt;创建：new Thread()&lt;/li&gt;
+      &lt;li&gt;就绪：start()&lt;/li&gt;
+      &lt;li&gt;运行：CPU调度，根据时间片轮询或yield方法切换就绪态&lt;/li&gt;
+      &lt;li&gt;阻塞：sleep()/join()&lt;/li&gt;
+      &lt;li&gt;终止：run结束或者Main结束&lt;/li&gt;
+      &lt;li&gt;锁定：synchronized&lt;/li&gt;
+      &lt;li&gt;等待：wait/notify&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;关键问题：
+    &lt;ul&gt;
+      &lt;li&gt;线程之间通信（线程之间交换信息）
+        &lt;ul&gt;
+          &lt;li&gt;共享内存&lt;/li&gt;
+          &lt;li&gt;消息传递：wait/notify/notifyAll&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;线程同步（控制不同线程操作发生的相对顺序）
+        &lt;ul&gt;
+          &lt;li&gt;共享内存的并发模型中，同步是显式进行，如：synchronized&lt;/li&gt;
+          &lt;li&gt;消息传递的并发模型中，消息发送必须在消息接收之前，所以同步是隐式的：
+            &lt;ul&gt;
+              &lt;li&gt;可见性问题：
+                &lt;ul&gt;
+                  &lt;li&gt;volatile、synchronized&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;控制线程执行的顺序：
+        &lt;ul&gt;
+          &lt;li&gt;join：让主线程等待子线程结束后才能继续运行&lt;/li&gt;
+          &lt;li&gt;ExecutorService executor = Excutors.newSingleThreadExecutor();// 只有一个线程的线程池，操作不限数量的线程队列（FIFO队列 -&amp;gt; 排队处理）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;volatile关键字
+    &lt;ul&gt;
+      &lt;li&gt;支持：可见性&lt;/li&gt;
+      &lt;li&gt;不支持：复合操作的原子性&lt;/li&gt;
+      &lt;li&gt;实现原理：
+        &lt;ul&gt;
+          &lt;li&gt;对volatile变量进行写操作时，JVM向处理器发送一条Lock前缀指令。会把缓存行的数据写会系统内存&lt;/li&gt;
+          &lt;li&gt;在多处理器的情况下，保证各处理器缓存一致性，实现缓存一致性协议（设置失效与更新）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;优化：拒绝指令重排&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;synchronized关键字：锁机制，隐式释放
+    &lt;ul&gt;
+      &lt;li&gt;支持：重入性、互斥性、可见性&lt;/li&gt;
+      &lt;li&gt;不支持：超时等待、可中断性、公平性&lt;/li&gt;
+      &lt;li&gt;实现原理：
+        &lt;ul&gt;
+          &lt;li&gt;monitorenter、monitorexit字节码指令&lt;/li&gt;
+          &lt;li&gt;SynchronizedQueue（存储无法获取锁的线程）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;释放时机：
+        &lt;ul&gt;
+          &lt;li&gt;代码块执行完成&lt;/li&gt;
+          &lt;li&gt;线程执行出现异常&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Lock接口：显式获取、释放锁，更适合竞争激烈场景（Java5推出的juc包中）
+    &lt;ul&gt;
+      &lt;li&gt;重入锁&lt;/li&gt;
+      &lt;li&gt;读写锁&lt;/li&gt;
+      &lt;li&gt;可中断锁&lt;/li&gt;
+      &lt;li&gt;公平锁&lt;/li&gt;
+      &lt;li&gt;可重入读写锁&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分布式锁：
+    &lt;ul&gt;
+      &lt;li&gt;场景：
+        &lt;ul&gt;
+          &lt;li&gt;多项服务访问同个资源&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;实现方式：
+        &lt;ul&gt;
+          &lt;li&gt;数据库：
+            &lt;ul&gt;
+              &lt;li&gt;原理：
+                &lt;ul&gt;
+                  &lt;li&gt;lock表.method_name字段，增加唯一性约束，实现获取锁功能&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;缺点：
+                &lt;ul&gt;
+                  &lt;li&gt;记录删除失败&lt;/li&gt;
+                  &lt;li&gt;不支持重入性&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;ZooKeeper：
+            &lt;ul&gt;
+              &lt;li&gt;原理：
+                &lt;ul&gt;
+                  &lt;li&gt;/Locks目录中写入methodName临时有序节点，当前最小节点获得锁&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+              &lt;li&gt;优点：
+                &lt;ul&gt;
+                  &lt;li&gt;Watch机制自动删除失效节点&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Redis：
+            &lt;ul&gt;
+              &lt;li&gt;原理：
+                &lt;ul&gt;
+                  &lt;li&gt;setnx命令：在key不存在时设置值，并返回0或1&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;死锁：
+    &lt;ul&gt;
+      &lt;li&gt;原因：
+        &lt;ul&gt;
+          &lt;li&gt;多把锁（哲学家问题）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;解决方式：
+        &lt;ul&gt;
+          &lt;li&gt;全局顺序&lt;/li&gt;
+          &lt;li&gt;超时时间（不能避免死锁）&lt;/li&gt;
+          &lt;li&gt;可中断锁（不能避免死锁）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;无锁化：
+    &lt;ul&gt;
+      &lt;li&gt;优点：
+        &lt;ul&gt;
+          &lt;li&gt;减少上下文切换&lt;/li&gt;
+          &lt;li&gt;无须手动获取、释放锁&lt;/li&gt;
+          &lt;li&gt;通用、高效、成熟&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;方法：
+        &lt;ul&gt;
+          &lt;li&gt;Hash取模分段处理&lt;/li&gt;
+          &lt;li&gt;Atomic类&lt;/li&gt;
+          &lt;li&gt;ReidsAtomic类（适用分布式环境）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;代码实践：
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/ZhengWeihao/JavaDemo/tree/master/src/main/java/com/zhengweihao/lock&quot;&gt;几种锁的使用及哲学家问题演示代码&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;参考资料
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.iteye.com/news/28915&quot;&gt;并发不是并行，它更好！&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OSX常用操作笔记</title>
+      <link>place_your_blog_url_here/osx/system/2015/10/28/osx-operates.html</link>
+      <pubDate>28 Oct 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/osx/system/2015/10/28/osx-operates</guid>
+      <description>&lt;h2 id=&quot;osx常用操作笔记&quot;&gt;OSX常用操作笔记&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;环境变量设置：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;环境变量目录（按顺序加载）：&lt;/li&gt;
+    &lt;/ul&gt;
+
+ 		/etc/profile
+ 		/etc/bashrc
+ 		~/.bash_profile
+
+ 	设置格式如：
+ 		export PATH=path1:path2:${PATH}
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;设置Finder以显示路径：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;执行命令：&lt;/li&gt;
+    &lt;/ul&gt;
+
+  		defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+  	拷贝路径快捷键：
+  		Option+Command+C
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Host文件目录：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;/etc/hosts&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JDK目录：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;/Library/Java/JavaVirtualMachines/&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finder 中显示隐藏文件：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder  //显示
+  defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder  //隐藏
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;隐藏美式键盘：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  备份 ~/Library/Preferences/com.apple.HIToolbox.plist
+  使用 plist编辑器打开 ~/Library/Preferences/com.apple.HIToolbox.plist
+  删除 AppleEnableInputSources 中不需要的节点。
+  重启系统
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;p&gt;​&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>JQuery+CSS3实现雪花飘落效果</title>
@@ -16,82 +509,82 @@
       <pubDate>20 Mar 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/frontend/cordova/2015/03/20/css3-snowflake</guid>
-      <description>&lt;h2 id=&quot;jquerycss3&quot;&gt;JQuery+CSS3实现雪花飘落效果&lt;/h2&gt;
+      <description>&lt;h2 id=&quot;jquerycss3实现雪花飘落效果&quot;&gt;JQuery+CSS3实现雪花飘落效果&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;想到做这个效果的想法来自于去年年底，淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo，但因为比较懒，直到现在才想到推到blog上。&lt;/p&gt;
+  &lt;p&gt;看到淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;预期效果：
-  产生漫天雪花，从天空飘落到地面，停留稍瞬后消融。&lt;/p&gt;
+产生漫天雪花，从天空飘落到地面，停留稍瞬后消融。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;实现思路：
-  第一步是产生雪花，即产生div，并利用随机数，随机一定区间的数字作为div的宽高、透明度，并设置border-radius属性为宽高值，即可得到一片大小、透明度随机的雪花。之后将雪花位置设置在屏幕顶端，横向位置随机，即完成雪花的初始化。示例代码如下：&lt;/p&gt;
+第一步是产生雪花，即产生div，并利用随机数，随机一定区间的数字作为div的宽高、透明度，并设置border-radius属性为宽高值，即可得到一片大小、透明度随机的雪花。之后将雪花位置设置在屏幕顶端，横向位置随机，即完成雪花的初始化。示例代码如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  // 产生雪花dom
-  function snowflake(size, alpha, top, left) {
-      var s = document.createElement(&#39;div&#39;);
-      $(s).css({
-          &#39;width&#39;: size,
-          &#39;height&#39;: size,
-          &#39;border-radius&#39;: size,
-          &#39;background-color&#39;: &#39;rgba(255,255,255,&#39; + alpha + &#39;)&#39;,
-          &#39;top&#39;: -50,
-          &#39;left&#39;: left,
-      }).addClass(&#39;snowflake&#39;);
-      return s;
-  }
-
-  // 获取一片随机大小、透明度的雪花示例
-  var size = Math.random() * flakeSize + 2;
-  var alpha = Math.random() * 0.7 + 0.1;
-  var left = Math.random() * $(window).width();
-  var s = snowflake(size, alpha, 0, left);
+    &lt;pre&gt;&lt;code&gt;// 产生雪花dom
+function snowflake(size, alpha, top, left) {
+	var s = document.createElement('div');
+	$(s).css({
+		'width': size,
+		'height': size,
+		'border-radius': size,
+		'background-color': 'rgba(255,255,255,' + alpha + ')',
+		'top': -50,
+		'left': left,
+	}).addClass('snowflake');
+	return s;
+}
+  	
+// 获取一片随机大小、透明度的雪花示例
+var size = Math.random() * flakeSize + 2;
+var alpha = Math.random() * 0.7 + 0.1;
+var left = Math.random() * $(window).width();
+var s = snowflake(size, alpha, 0, left);
 &lt;/code&gt;&lt;/pre&gt;
 
     &lt;p&gt;产生雪花后，设置css3的transition属性，并将div移动到屏幕底部，即可开启动画效果。同时，雪花飘落后，停顿若干时长再将dom删除，即可达到雪花消融效果。示例代码如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  .snowflake {
-      background-color: rgba(255, 255, 255, 0.5);
-      display: inline-block;
-      transition: top 2s;// 此处认为动画时间为2秒较为合适,实际情况中可自行调整
-      transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);// 设置动画的贝塞尔值,使得动画不显得生硬,具体值同样也可按个人喜好调整
-  }
-
-  // 利用setTimeout方法,延时消除雪花,melt的值即为雪花飘落后留存的时长
-  setTimeout(function() {
-      $s.remove();
-  }, 2000 + melt);
-
-  完成一片雪花的动画效果后，只要快速不停地循环这个，即能产生雪花不停飘落的效果了。示例代码如下：
-
-  var it = setInterval(function() {
-      // 初始化雪花
-      var id = &#39;s_&#39; + (++animateId);
-      var size = Math.random() * flakeSize + 2;
-      var alpha = Math.random() * 0.7 + 0.1;
-      var left = Math.random() * $(window).width();
-      var s = snowflake(size, alpha, 0, left);
-      var $s = $(s).attr(&#39;id&#39;, id);
-      $sky.get(0).appendChild(s);
-
-      // 雪花飘落并消融,延迟执行以确保dom已经生成好
-      setTimeout(function() {
-          $s.css(&#39;top&#39;, maxTop + (flakeSize - $s.width()) / 2);
-
-          setTimeout(function() {
-              $s.remove();
-          }, 2000 + melt);
-      }, 100);
-  }, rate);
+    &lt;pre&gt;&lt;code&gt;.snowflake {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: inline-block;
+	transition: top 2s;// 此处认为动画时间为2秒较为合适,实际情况中可自行调整
+	transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);// 设置动画的贝塞尔值,使得动画不显得生硬,具体值同样也可按个人喜好调整
+}
+  	
+// 利用setTimeout方法,延时消除雪花,melt的值即为雪花飘落后留存的时长
+setTimeout(function() {
+	$s.remove();
+}, 2000 + melt);
+  	
+完成一片雪花的动画效果后，只要快速不停地循环这个，即能产生雪花不停飘落的效果了。示例代码如下：
+  	
+var it = setInterval(function() {
+	// 初始化雪花
+	var id = 's_' + (++animateId);
+	var size = Math.random() * flakeSize + 2;
+	var alpha = Math.random() * 0.7 + 0.1;
+	var left = Math.random() * $(window).width();
+	var s = snowflake(size, alpha, 0, left);
+	var $s = $(s).attr('id', id);
+	$sky.get(0).appendChild(s);
+  	
+	// 雪花飘落并消融,延迟执行以确保dom已经生成好
+	setTimeout(function() {
+		$s.css('top', maxTop + (flakeSize - $s.width()) / 2);
+  	
+		setTimeout(function() {
+			$s.remove();
+		}, 2000 + melt);
+	}, 100);
+}, rate);
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;结果展示：
-  进入页面随机开始频率为60ms，融化时长2s的动画，页面向下拖动可设置参数，&lt;a href=&quot;/example/snowflake/index.html&quot;&gt;点我查看页面&lt;/a&gt;。&lt;/p&gt;
+进入页面随机开始频率为60ms，融化时长2s的动画，页面向下拖动可设置参数，&lt;a href=&quot;/example/snowflake/index.html&quot;&gt;点我查看页面&lt;/a&gt;。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -103,12 +596,12 @@
       <pubDate>20 Mar 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first</guid>
-      <description>&lt;h2 id=&quot;cordova&quot;&gt;Cordova开发笔记&lt;/h2&gt;
+      <description>&lt;h2 id=&quot;cordova开发笔记&quot;&gt;Cordova开发笔记&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;cordova-1&quot;&gt;Cordova基本开发环境&lt;/h3&gt;
+&lt;h3 id=&quot;cordova基本开发环境&quot;&gt;Cordova基本开发环境&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;安装&lt;/li&gt;
@@ -154,102 +647,100 @@
       <pubDate>16 Feb 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/backend/java/spring/springmvc/2015/02/16/spring-mvc-freemark</guid>
-      <description>&lt;h2 id=&quot;springmvcfreemarkjson&quot;&gt;SpringMVC集成Freemark及JSON格式输出&lt;/h2&gt;
+      <description>&lt;h2 id=&quot;springmvc集成freemark及json格式输出&quot;&gt;SpringMVC集成Freemark及JSON格式输出&lt;/h2&gt;
 &lt;blockquote&gt;
   &lt;p&gt;最近做项目需要使用SpringMVC代替Struts2，因此进行了对SpringMVC的一些初步学习，而在以前的项目中，也是对Freemark比较熟悉，所以也做了整合Freemark的一些工作，在这里做个记录。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;springmvc&quot;&gt;第一部分：SpringMVC基本配置&lt;/h3&gt;
+&lt;h3 id=&quot;第一部分springmvc基本配置&quot;&gt;第一部分：SpringMVC基本配置&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Jar包：&lt;/p&gt;
 
-    &lt;p&gt;　　项目为Maven工程，所以使用pom文件管理jar包，具体依赖如下：&lt;/p&gt;
+    &lt;p&gt;项目为Maven工程，所以使用pom文件管理jar包，具体依赖如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;    &amp;lt;!--spring 依赖 --&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-beans&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-context&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-context-support&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-core&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-aop&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-web&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-webmvc&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-tx&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-orm&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;spring-jdbc&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-	  
-    &amp;lt;!-- Freemarker --&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.freemarker&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;freemarker&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;2.3.20&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+  	  &lt;!--spring 依赖 --&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
+  	    &lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  		&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
+  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  		&lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
+  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  		&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
+  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-aop&lt;/artifactId&gt;
+  	    &lt;version&gt;${spring.version}&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  		&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
+  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;
+  	    &lt;version&gt;${spring.version}&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-tx&lt;/artifactId&gt;
+  	    &lt;version&gt;${spring.version}&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-orm&lt;/artifactId&gt;
+  	    &lt;version&gt;${spring.version}&lt;/version&gt;
+  	  &lt;/dependency&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+  	    &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;
+  	    &lt;version&gt;${spring.version}&lt;/version&gt;
+  	  &lt;/dependency&gt;
+
+  	  &lt;!-- Freemarker --&gt;
+  	  &lt;dependency&gt;
+  	    &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
+  	    &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
+  	    &lt;version&gt;2.3.20&lt;/version&gt;
+  	  &lt;/dependency&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Spring支持与SpringMVC基本配置：&lt;/p&gt;
 
-    &lt;p&gt;　　１、Spring基本配置，在Web.xml中添加相应地监听器，并指定配置文件（记得建立配置文件，否则会报FileNotFound异常），如下：&lt;/p&gt;
+    &lt;p&gt;１、Spring基本配置，在Web.xml中添加相应地监听器，并指定配置文件（记得建立配置文件，否则会报FileNotFound异常），如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- Spring 上下文配置文件 --&amp;gt;
-  &amp;lt;context-param&amp;gt;
-      &amp;lt;param-name&amp;gt;contextConfigLocation&amp;lt;/param-name&amp;gt;
-      &amp;lt;param-value&amp;gt;classpath:applicationContext.xml&amp;lt;/param-value&amp;gt;
-  &amp;lt;/context-param&amp;gt;
+  	&lt;!-- Spring 上下文配置文件 --&gt;
+  	&lt;context-param&gt;
+  		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
+  		&lt;param-value&gt;classpath:applicationContext.xml&lt;/param-value&gt;
+  	&lt;/context-param&gt;
 
-  &amp;lt;!-- Spring 刷新Introspector防止内存泄露 --&amp;gt;
-  &amp;lt;listener&amp;gt;
-      &amp;lt;listener-class&amp;gt;
-          org.springframework.web.util.IntrospectorCleanupListener
-      &amp;lt;/listener-class&amp;gt;
-  &amp;lt;/listener&amp;gt;
+  	&lt;!-- Spring 刷新Introspector防止内存泄露 --&gt;
+  	&lt;listener&gt;
+  		&lt;listener-class&gt;
+  			org.springframework.web.util.IntrospectorCleanupListener
+  		&lt;/listener-class&gt;
+  	&lt;/listener&gt;
 
-  &amp;lt;!-- Spring 使用ContextLoaderListener加载ApplicationContext配置信息 --&amp;gt;
-  &amp;lt;listener&amp;gt;
-      &amp;lt;listener-class&amp;gt;org.springframework.web.context.ContextLoaderListener&amp;lt;/listener-class&amp;gt;
-  &amp;lt;/listener&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+  	&lt;!-- Spring 使用ContextLoaderListener加载ApplicationContext配置信息 --&gt;
+  	&lt;listener&gt;
+  		&lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;
+  	&lt;/listener&gt;
 
     &lt;p&gt;　　２、SpringMVC配置(Web.xml中配置，并建立spring-mvc.xml配置文件）。&lt;/p&gt;
 
@@ -323,135 +814,128 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;springmvcfreemark&quot;&gt;第二部分：SpringMVC集成Freemark输出模板页面&lt;/h3&gt;
+&lt;h3 id=&quot;第二部分springmvc集成freemark输出模板页面&quot;&gt;第二部分：SpringMVC集成Freemark输出模板页面&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;添加Freemark的pom依赖，如下：&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;&amp;lt;!-- Freemarker --&amp;gt;
-&amp;lt;dependency&amp;gt;
-  &amp;lt;groupId&amp;gt;org.freemarker&amp;lt;/groupId&amp;gt;
-  &amp;lt;artifactId&amp;gt;freemarker&amp;lt;/artifactId&amp;gt;
-  &amp;lt;version&amp;gt;2.3.20&amp;lt;/version&amp;gt;
-&amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;添加Freemark的pom依赖，如下：
+  ​	
+  &lt;!-- Freemarker --&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
+      &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
+      &lt;version&gt;2.3.20&lt;/version&gt;
+    &lt;/dependency&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在spring-mvc.xml中设置使用Freemark为视图解析器，如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- FreeMarker基础支持 --&amp;gt;  
-  &amp;lt;bean id=&quot;freemarkerConfigurer&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer&quot;&amp;gt;  
-      &amp;lt;property name=&quot;templateLoaderPath&quot; value=&quot;/view/&quot; /&amp;gt;
-      &amp;lt;property name=&quot;defaultEncoding&quot; value=&quot;UTF-8&quot; /&amp;gt;
-      &amp;lt;property name=&quot;freemarkerSettings&quot;&amp;gt;
-          &amp;lt;props&amp;gt;
-              &amp;lt;prop key=&quot;template_update_delay&quot;&amp;gt;10&amp;lt;/prop&amp;gt;
-              &amp;lt;prop key=&quot;locale&quot;&amp;gt;zh_CN&amp;lt;/prop&amp;gt;
-              &amp;lt;prop key=&quot;datetime_format&quot;&amp;gt;yyyy-MM-dd HH:mm:ss&amp;lt;/prop&amp;gt;
-              &amp;lt;prop key=&quot;date_format&quot;&amp;gt;yyyy-MM-dd&amp;lt;/prop&amp;gt;
-              &amp;lt;prop key=&quot;number_format&quot;&amp;gt;#.##&amp;lt;/prop&amp;gt;
-          &amp;lt;/props&amp;gt;
-      &amp;lt;/property&amp;gt;
-  &amp;lt;/bean&amp;gt;
-  &amp;lt;!-- FreeMarker视图解析 --&amp;gt;
-  &amp;lt;bean id=&quot;viewResolver&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver&quot;&amp;gt;  
-      &amp;lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerView&quot; /&amp;gt;
-      &amp;lt;property name=&quot;suffix&quot; value=&quot;.ftl&quot; /&amp;gt;
-      &amp;lt;property name=&quot;contentType&quot; value=&quot;text/html;charset=UTF-8&quot; /&amp;gt;
-      &amp;lt;property name=&quot;exposeRequestAttributes&quot; value=&quot;true&quot; /&amp;gt;
-      &amp;lt;property name=&quot;exposeSessionAttributes&quot; value=&quot;true&quot; /&amp;gt;
-      &amp;lt;property name=&quot;exposeSpringMacroHelpers&quot; value=&quot;true&quot; /&amp;gt;
-  &amp;lt;/bean&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;&lt;!-- FreeMarker基础支持 --&gt;&lt;br /&gt;
+     &lt;bean id=&quot;freemarkerConfigurer&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer&quot;&gt;  
+         &lt;property name=&quot;templateLoaderPath&quot; value=&quot;/view/&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;defaultEncoding&quot; value=&quot;UTF-8&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;freemarkerSettings&quot;&gt;
+             &lt;props&gt;
+                 &lt;prop key=&quot;template_update_delay&quot;&gt;10&lt;/prop&gt;
+                 &lt;prop key=&quot;locale&quot;&gt;zh_CN&lt;/prop&gt;
+                 &lt;prop key=&quot;datetime_format&quot;&gt;yyyy-MM-dd HH:mm:ss&lt;/prop&gt;
+                 &lt;prop key=&quot;date_format&quot;&gt;yyyy-MM-dd&lt;/prop&gt;
+                 &lt;prop key=&quot;number_format&quot;&gt;#.##&lt;/prop&gt;
+             &lt;/props&gt;
+         &lt;/property&gt;
+     &lt;/bean&gt;
+     &lt;!-- FreeMarker视图解析 --&gt;
+     &lt;bean id=&quot;viewResolver&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver&quot;&gt;  
+         &lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerView&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;suffix&quot; value=&quot;.ftl&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;contentType&quot; value=&quot;text/html;charset=UTF-8&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;exposeRequestAttributes&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;exposeSessionAttributes&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
+         &lt;property name=&quot;exposeSpringMacroHelpers&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
+     &lt;/bean&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;控制器中进行测试&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  @RequestMapping(&quot;/test_ftl&quot;)
-  public ModelAndView index(HttpServletRequest req) {
-      String pix = req.getParameter(&quot;pix&quot;);
-		
-      ModelAndView mav = new ModelAndView(&quot;index&quot;);
-      mav.addObject(&quot;pix&quot;, pix);
-      return mav;
-  }
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;@RequestMapping(“/test_ftl”)
+ 	public ModelAndView index(HttpServletRequest req) {
+ 		String pix = req.getParameter(“pix”);&lt;/p&gt;
+
+ 		ModelAndView mav = new ModelAndView(“index”);
+ 		mav.addObject(“pix”, pix);
+ 		return mav;
+ 	}
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;第二部分SpringMVC集成Freemark输出模板页面至此完成。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;springmvcjson&quot;&gt;第三部分：配置SpringMVC输出JSON格式的数据&lt;/h3&gt;
+&lt;h3 id=&quot;第三部分配置springmvc输出json格式的数据&quot;&gt;第三部分：配置SpringMVC输出JSON格式的数据&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;在pom文件中添加对Jackson的依赖，如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;    &amp;lt;!-- JSON for Spring MVC --&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;jackson-core-asl&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;jackson-mapper-asl&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;1.9.7&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;jackson-jaxrs&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
-      &amp;lt;artifactId&amp;gt;jackson-xc&amp;lt;/artifactId&amp;gt;
-      &amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;&lt;!-- JSON for Spring MVC --&gt;
+   	  &lt;dependency&gt;
+   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
+   		&lt;artifactId&gt;jackson-core-asl&lt;/artifactId&gt;
+   		&lt;version&gt;1.8.0&lt;/version&gt;
+   	  &lt;/dependency&gt;
+   	  &lt;dependency&gt;
+   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
+   		&lt;artifactId&gt;jackson-mapper-asl&lt;/artifactId&gt;
+   		&lt;version&gt;1.9.7&lt;/version&gt;
+   	  &lt;/dependency&gt;
+   	  &lt;dependency&gt;
+   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
+   		&lt;artifactId&gt;jackson-jaxrs&lt;/artifactId&gt;
+   		&lt;version&gt;1.8.0&lt;/version&gt;
+   	  &lt;/dependency&gt;
+   	  &lt;dependency&gt;
+   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
+   		&lt;artifactId&gt;jackson-xc&lt;/artifactId&gt;
+   		&lt;version&gt;1.8.0&lt;/version&gt;
+   	  &lt;/dependency&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在spring-mvc.xml中配置JSON格式的支持，如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- Spring MVC JSON输出格式 --&amp;gt;
-  &amp;lt;bean id=&quot;mappingJacksonHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.json.MappingJacksonHttpMessageConverter&quot;&amp;gt;
-      &amp;lt;property name=&quot;supportedMediaTypes&quot;&amp;gt;
-          &amp;lt;list&amp;gt;
-              &amp;lt;value&amp;gt;application/json;charset=UTF-8&amp;lt;/value&amp;gt;
-              &amp;lt;value&amp;gt;text/html;charset=UTF-8&amp;lt;/value&amp;gt;
-          &amp;lt;/list&amp;gt;
-      &amp;lt;/property&amp;gt;
-  &amp;lt;/bean&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;&lt;!-- Spring MVC JSON输出格式 --&gt;
+ 	&lt;bean id=&quot;mappingJacksonHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.json.MappingJacksonHttpMessageConverter&quot;&gt;
+ 		&lt;property name=&quot;supportedMediaTypes&quot;&gt;
+ 			&lt;list&gt;
+ 				&lt;value&gt;application/json;charset=UTF-8&lt;/value&gt;
+ 				&lt;value&gt;text/html;charset=UTF-8&lt;/value&gt;
+ 			&lt;/list&gt;
+ 		&lt;/property&gt;
+ 	&lt;/bean&gt;&lt;/p&gt;
 
     &lt;p&gt;并将Jackson的实体引入到AnnotationMethodHandlerAdapter类的messageConverters属性当中，如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  &amp;lt;bean class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&amp;gt;
-      &amp;lt;property name=&quot;messageConverters&quot;&amp;gt;
-          &amp;lt;list&amp;gt;
-              &amp;lt;!-- JSON文本输出格式 --&amp;gt;
-              &amp;lt;ref bean=&quot;mappingJacksonHttpMessageConverter&quot; /&amp;gt;
-              &amp;lt;!-- 简单文本输出格式 --&amp;gt;
-              &amp;lt;ref bean=&quot;mappingStringHttpMessageConverter&quot; /&amp;gt;
-          &amp;lt;/list&amp;gt;
-      &amp;lt;/property&amp;gt;
-  &amp;lt;/bean&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+ 	&lt;bean class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&gt;
+ 		&lt;property name=&quot;messageConverters&quot;&gt;
+ 			&lt;list&gt;
+ 				&lt;!-- JSON文本输出格式 --&gt;
+ 				&lt;ref bean=&quot;mappingJacksonHttpMessageConverter&quot;&gt;&lt;/ref&gt;
+ 				&lt;!-- 简单文本输出格式 --&gt;
+ 				&lt;ref bean=&quot;mappingStringHttpMessageConverter&quot;&gt;&lt;/ref&gt;
+ 			&lt;/list&gt;
+ 		&lt;/property&gt;
+ 	&lt;/bean&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在控制器中编写JSON格式测试方法，如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  @RequestMapping(&quot;/test_json&quot;)
-  @ResponseBody
-  public JSONObject testJson(Long id, String name) {
-      JSONObject obj = new JSONObject();
-      obj.put(&quot;id&quot;, id);
-      obj.put(&quot;name&quot;, name);
-      return obj;
-  }
-&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;@RequestMapping(“/test_json”)
+ 	@ResponseBody
+ 	public JSONObject testJson(Long id, String name) {
+ 		JSONObject obj = new JSONObject();
+ 		obj.put(“id”, id);
+ 		obj.put(“name”, name);
+ 		return obj;
+ 	}&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;至此，SpringMVC对输出JSON格式的配置也已完成。&lt;/p&gt;
@@ -462,6 +946,7 @@
   &lt;p&gt;　　到此为止，已经可以使用SpringMVC进行常见的开发工作，如有更多内容将会陆续补充上来。&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;​&lt;/p&gt;
 </description>
     </item>
     
@@ -471,17 +956,13 @@
       <pubDate>16 Feb 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/frontend/2015/02/16/random-nums-tool</guid>
-      <description>&lt;h2 id=&quot;jqueryhtml&quot;&gt;JQuery+HTML实现年会摇奖小工具&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;临近年关，想必大家都会期待这一年的公司年会，又会有一些什么样的精彩活动。而就在昨天，以前的人事同事要求我帮写个年会摇奖小工具，以供年会抽奖使用。我简单分析了下思路，觉得还挺有意思的，于是就用JQuery+HTML写了个小网页。实现并不复杂，当然也可能不够好，大神们轻喷。&lt;/p&gt;
-&lt;/blockquote&gt;
+      <description>&lt;h2 id=&quot;jqueryhtml实现年会摇奖小工具&quot;&gt;JQuery+HTML实现年会摇奖小工具&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;需求背景：&lt;/p&gt;
+    &lt;p&gt;背景：&lt;/p&gt;
 
-    &lt;p&gt;　　首先由工作人员为员工们发配个人编号（连续数字），然后在工具中设置抽奖数字区间（即个人编号的范围），之后点击“摇奖”按钮进行摇号，点击“停止”按钮后，确认一个区间内数字，即为中奖号，而该号对应编号的同事即为中奖人了。&lt;/p&gt;
+    &lt;p&gt;　　因公司年会抽奖需要而编写网页版的此工具。使用流程为：由工作人员为员工们发配个人编号（连续数字），然后在工具中设置抽奖编号区间，之后点击“摇奖”按钮进行摇号，点击“停止”按钮后，确认一个区间内数字，即为中奖号，而该号对应编号的同事即为中奖人了。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;实现思路：&lt;/p&gt;
@@ -490,95 +971,94 @@
 
     &lt;p&gt;　　定义好数组变量后，还需要一个&lt;code&gt;旗帜变量&lt;/code&gt;，作为摇奖进行中与停止的标志。编写一个主函数，定时地进行执行，根据旗帜变量进行相应的操作：在摇奖过程中时，将号码数组的所有数字依依快速地显示到显示框中；在停止后，选定当时显示的数字作为中奖数字，并停止定时执行。实现如下:	　　&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  //主函数
-  var range = [];//号码数组
-  var prize = [];//中奖数组
-  var inGame = false;//旗帜变量
-  var exe_i = 0;//当前执行到的下标
-  function main() {
-      if(inGame) {//继续执行
-          //操作数组下标
-          exe_i++;
-          if(exe_i &amp;gt;= range.length) exe_i = 0;
+  	//主函数
+  	var range = [];//号码数组
+  	var prize = [];//中奖数组
+  	var inGame = false;//旗帜变量
+  	var exe_i = 0;//当前执行到的下标
+  	function main() {
+  		if(inGame) {//继续执行
+  			//操作数组下标
+  			exe_i++;
+  			if(exe_i &amp;gt;= range.length) exe_i = 0;
 
-          //显示数组内容
-          $stage.html(range[exe_i]);
+  			//显示数组内容
+  			$stage.html(range[exe_i]);
 
-          //数组长度不够时自动结束
-          if(range.length &amp;lt;= 1) inGame = false;
-      } else {//结束游戏
-          var cur = range[exe_i];//当前号码
+  			//数组长度不够时自动结束
+  			if(range.length &amp;lt;= 1) inGame = false;
+  		} else {//结束游戏
+  			var cur = range[exe_i];//当前号码
 
-          //更新数组数据
-          prize.push(cur);
-          range.splice(exe_i, 1);
+  			//更新数组数据
+  			prize.push(cur);
+  			range.splice(exe_i, 1);
 
-          //显示结果
-          console.log(&#39;下标:&#39; + exe_i + &#39;;数字:&#39; + cur);
-          alert(&#39;摇中号码：&#39; + cur);
-          msg();
+  			//显示结果
+  			console.log(‘下标:’ + exe_i + ‘;数字:’ + cur);
+  			alert(‘摇中号码：’ + cur);
+  			msg();
 
-          //停止定时任务
-          window.clearInterval(mainInterval);
-      }
-  }
-&lt;/code&gt;&lt;/pre&gt;
+  			//停止定时任务
+  			window.clearInterval(mainInterval);
+  		}
+  	}
 
     &lt;p&gt;　　有了主函数，工具已经完成了一大半，现在还需要一个触发的函数作为开始与停止操作的触发者。点击“开始”按钮时修改状态位为开始状态并开始定时执行主函数，而点击“停止”按钮时修改旗帜变量状态位为停止状态，主函数会根据状态为进入到停止操作。实现如下：&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt;  //触发函数
-  var mainInterval;//定时执行任务标识，通过它可以取消定时执行
-  function play() {
-      if(inGame) {//执行时触发 -&amp;gt; 停止
-          inGame = false;
-      } else {//非执行状态触发 -&amp;gt; 开始
-          //检查执行环境
-          if(range.length &amp;lt;= 0) {
-              alert(&#39;没号了，加几个进来呗&#39;);
-              return;
-          }
-			
-          //开始执行
-          inGame = true;
-          mainInterval = self.setInterval(&#39;main()&#39;, 50);
-      }
-  }
-&lt;/code&gt;&lt;/pre&gt;
+  	//触发函数
+  	var mainInterval;//定时执行任务标识，通过它可以取消定时执行
+  	function play() {
+  		if(inGame) {//执行时触发 -&amp;gt; 停止
+  			inGame = false;
+  		} else {//非执行状态触发 -&amp;gt; 开始
+  			//检查执行环境
+  			if(range.length &amp;lt;= 0) {
+  				alert(‘没号了，加几个进来呗’);
+  				return;
+  			}
 
-    &lt;p&gt;　　至此核心部分已经基本完成，当然还缺少一些细节的控制，比如：需要提供输入框进行交互；需要根据输入区间产生乱序的号码数组等，这里就不再赘述了，当然，最后还需要对界面美化一下~
-  　　&lt;/p&gt;
+  			//开始执行
+  			inGame = true;
+  			mainInterval = self.setInterval(‘main()’, 50);
+  		}
+  	}
+
+    &lt;p&gt;　　至此核心部分已经基本完成，当然还缺少一些细节的控制，比如：需要提供输入框进行交互；需要根据输入区间产生乱序的号码数组等，这里就不再赘述了，当然，最后还需要对界面美化一下~&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;结果展示：&lt;/p&gt;
 
-    &lt;p&gt;　　这里再提供一下最终完成的作品（背景图是人事MM找来的，原来丑得惨不忍睹。。。），&lt;a href=&quot;/example/random-nums/index.html&quot;&gt;点我查看&lt;/a&gt;，详细代码就请点&lt;code&gt;审查元素&lt;/code&gt;咯 ^_^&lt;/p&gt;
+    &lt;p&gt;这里再提供一下最终完成的作品（背景图是人事MM找来的，原来丑得惨不忍睹。。。），&lt;a href=&quot;/example/random-nums/index.html&quot;&gt;点我查看&lt;/a&gt;，详细代码就请点&lt;code&gt;审查元素&lt;/code&gt;咯 ^_^&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>第一篇文章</title>
-      <link>place_your_blog_url_here/other/2015/01/13/HelloWorld.html</link>
-      <pubDate>13 Jan 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/other/2015/01/13/HelloWorld</guid>
-      <description>&lt;h2 id=&quot;hello-world&quot;&gt;Hello World&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;一直想在Github上搭建个个人博客，来做一些学习及生活方面的笔记，今天终于是实现了。建立博客的原因，一方面是供自己回忆与归纳整理，另一方面也作为与朋友们分享的一些内容，希望能够共同学习，共同进步。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;技术实现主要是通过Ruby的Jekyll框架（搭配3-Jekyll皮肤），在本地写好MarkDown笔记后编译同步到Github空间来发布&lt;code&gt;（想学来找我啊）&lt;/code&gt;。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;内容不出意外将以Java知识为主，也会记录一些自己对编程的思考与学习笔记，当然也会有一些好用工具的分享，以及部分生活娱乐方面的分享，希望内容将能日渐充实起来，也希望能够分享出一些精彩的内容。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
 </description>
     </item>
     
   </channel>
 </rss>
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+    <!-- UpYun Advertise
+    <div class="adv">
+    	<a href="http://www.upyun.com/">
+    		<img src="/imgs/upyun_logo.png" />
+    	</a>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="/imgs/fav.ico">
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+    <title>Java并发编程笔记</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    </style>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
+          <li id="js-label2" class="tags__li tags-btn">Java相关</li>
+          <li id="js-label3" class="tags__li tags-btn">摄影相关</li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:place_your_email_address_here" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+          <!-- NOTE: input field is disabled by default -->
+          <input id="search-input" type="text" placeholder="Search..." disabled >
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java pl__all" href="/java/2018/01/22/java-common.html"><span class="pl__circle"></span><span class="pl__title">Java常用操作笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java concurrent pl__all" href="/java/concurrent/2016/07/12/java-concurrent.html"><span class="pl__circle"></span><span class="pl__title">Java并发编程笔记</span><span class="pl__date">Jul 2016</span></a>
+        
+          <a class="osx system pl__all" href="/osx/system/2015/10/28/osx-operates.html"><span class="pl__circle"></span><span class="pl__title">OSX常用操作笔记</span><span class="pl__date">Oct 2015</span></a>
+        
+          <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/css3-snowflake.html"><span class="pl__circle"></span><span class="pl__title">JQuery+CSS3实现雪花飘落效果</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/cordova-first.html"><span class="pl__circle"></span><span class="pl__title">Cordova开发笔记</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="backend java spring springMVC pl__all" href="/backend/java/spring/springmvc/2015/02/16/spring-mvc-freemark.html"><span class="pl__circle"></span><span class="pl__title">SpringMVC集成Freemark及JSON格式输出</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="frontend pl__all" href="/frontend/2015/02/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">JQuery+HTML实现年会摇奖小工具</span><span class="pl__date">Feb 2015</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <h2 id="java并发编程笔记">Java并发编程笔记</h2>
+
+<ul>
+  <li>基本概念：
+    <ul>
+      <li>进程：程序</li>
+      <li>线程：进程中负责执行程序的执行单元</li>
+      <li>并发：以可独立执行的进程集合的方式编程</li>
+      <li>并行：以可同时执行的计算指令方式编程</li>
+    </ul>
+  </li>
+  <li>多线程实现原理：
+    <ul>
+      <li>时间片调度</li>
+    </ul>
+  </li>
+  <li>优点：
+    <ul>
+      <li>提高资源利用率</li>
+      <li>提高程序性能</li>
+    </ul>
+  </li>
+  <li>风险：
+    <ul>
+      <li>死锁</li>
+      <li>上下文切换</li>
+      <li>线程安全</li>
+    </ul>
+  </li>
+  <li>实现方式：
+    <ul>
+      <li>继承Thread类：单继承</li>
+      <li>实现Runnable接口：多实现</li>
+      <li>ExecutorService</li>
+      <li>Callable接口、Future类实现带返回值的多线程操作</li>
+    </ul>
+  </li>
+  <li>生命周期：
+    <ul>
+      <li>创建：new Thread()</li>
+      <li>就绪：start()</li>
+      <li>运行：CPU调度，根据时间片轮询或yield方法切换就绪态</li>
+      <li>阻塞：sleep()/join()</li>
+      <li>终止：run结束或者Main结束</li>
+      <li>锁定：synchronized</li>
+      <li>等待：wait/notify</li>
+    </ul>
+  </li>
+  <li>关键问题：
+    <ul>
+      <li>线程之间通信（线程之间交换信息）
+        <ul>
+          <li>共享内存</li>
+          <li>消息传递：wait/notify/notifyAll</li>
+        </ul>
+      </li>
+      <li>线程同步（控制不同线程操作发生的相对顺序）
+        <ul>
+          <li>共享内存的并发模型中，同步是显式进行，如：synchronized</li>
+          <li>消息传递的并发模型中，消息发送必须在消息接收之前，所以同步是隐式的：
+            <ul>
+              <li>可见性问题：
+                <ul>
+                  <li>volatile、synchronized</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>控制线程执行的顺序：
+        <ul>
+          <li>join：让主线程等待子线程结束后才能继续运行</li>
+          <li>ExecutorService executor = Excutors.newSingleThreadExecutor();// 只有一个线程的线程池，操作不限数量的线程队列（FIFO队列 -&gt; 排队处理）</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>volatile关键字
+    <ul>
+      <li>支持：可见性</li>
+      <li>不支持：复合操作的原子性</li>
+      <li>实现原理：
+        <ul>
+          <li>对volatile变量进行写操作时，JVM向处理器发送一条Lock前缀指令。会把缓存行的数据写会系统内存</li>
+          <li>在多处理器的情况下，保证各处理器缓存一致性，实现缓存一致性协议（设置失效与更新）</li>
+        </ul>
+      </li>
+      <li>优化：拒绝指令重排</li>
+    </ul>
+  </li>
+  <li>synchronized关键字：锁机制，隐式释放
+    <ul>
+      <li>支持：重入性、互斥性、可见性</li>
+      <li>不支持：超时等待、可中断性、公平性</li>
+      <li>实现原理：
+        <ul>
+          <li>monitorenter、monitorexit字节码指令</li>
+          <li>SynchronizedQueue（存储无法获取锁的线程）</li>
+        </ul>
+      </li>
+      <li>释放时机：
+        <ul>
+          <li>代码块执行完成</li>
+          <li>线程执行出现异常</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Lock接口：显式获取、释放锁，更适合竞争激烈场景（Java5推出的juc包中）
+    <ul>
+      <li>重入锁</li>
+      <li>读写锁</li>
+      <li>可中断锁</li>
+      <li>公平锁</li>
+      <li>可重入读写锁</li>
+    </ul>
+  </li>
+  <li>分布式锁：
+    <ul>
+      <li>场景：
+        <ul>
+          <li>多项服务访问同个资源</li>
+        </ul>
+      </li>
+      <li>实现方式：
+        <ul>
+          <li>数据库：
+            <ul>
+              <li>原理：
+                <ul>
+                  <li>lock表.method_name字段，增加唯一性约束，实现获取锁功能</li>
+                </ul>
+              </li>
+              <li>缺点：
+                <ul>
+                  <li>记录删除失败</li>
+                  <li>不支持重入性</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>ZooKeeper：
+            <ul>
+              <li>原理：
+                <ul>
+                  <li>/Locks目录中写入methodName临时有序节点，当前最小节点获得锁</li>
+                </ul>
+              </li>
+              <li>优点：
+                <ul>
+                  <li>Watch机制自动删除失效节点</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Redis：
+            <ul>
+              <li>原理：
+                <ul>
+                  <li>setnx命令：在key不存在时设置值，并返回0或1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>死锁：
+    <ul>
+      <li>原因：
+        <ul>
+          <li>多把锁（哲学家问题）</li>
+        </ul>
+      </li>
+      <li>解决方式：
+        <ul>
+          <li>全局顺序</li>
+          <li>超时时间（不能避免死锁）</li>
+          <li>可中断锁（不能避免死锁）</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>无锁化：
+    <ul>
+      <li>优点：
+        <ul>
+          <li>减少上下文切换</li>
+          <li>无须手动获取、释放锁</li>
+          <li>通用、高效、成熟</li>
+        </ul>
+      </li>
+      <li>方法：
+        <ul>
+          <li>Hash取模分段处理</li>
+          <li>Atomic类</li>
+          <li>ReidsAtomic类（适用分布式环境）</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>代码实践：
+    <ul>
+      <li><a href="https://github.com/ZhengWeihao/JavaDemo/tree/master/src/main/java/com/zhengweihao/lock">几种锁的使用及哲学家问题演示代码</a></li>
+    </ul>
+  </li>
+  <li>参考资料
+    <ul>
+      <li><a href="http://www.iteye.com/news/28915">并发不是并行，它更好！</a></li>
+    </ul>
+  </li>
+</ul>
+
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+    <!-- UpYun Advertise
+    <div class="adv">
+    	<a href="http://www.upyun.com/">
+    		<img src="/imgs/upyun_logo.png" />
+    	</a>
+    </div> -->
+  </body>
+</html>

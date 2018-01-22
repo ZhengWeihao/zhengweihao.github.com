@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="shortcut icon" href="/imgs/fav.ico">
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
-    <title>第一篇文章</title>
+    <title>OSX常用操作笔记</title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     </style>
@@ -17,10 +17,8 @@
 
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
-          <li id="js-label2" class="tags__li tags-btn">编程基础</li>
-          <li id="js-label3" class="tags__li tags-btn">后端技术</li>
-          <li id="js-label4" class="tags__li tags-btn">前端技术</li>
-          <li id="js-label5" class="tags__li tags-btn">其他</li>
+          <li id="js-label2" class="tags__li tags-btn">Java相关</li>
+          <li id="js-label3" class="tags__li tags-btn">摄影相关</li>
         </ul>
 
         <div id="tags__bottom">
@@ -38,6 +36,16 @@
 
         <nav id="pl__container">
         
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java pl__all" href="/java/2018/01/22/java-common.html"><span class="pl__circle"></span><span class="pl__title">Java常用操作笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java concurrent pl__all" href="/java/concurrent/2016/07/12/java-concurrent.html"><span class="pl__circle"></span><span class="pl__title">Java并发编程笔记</span><span class="pl__date">Jul 2016</span></a>
+        
+          <a class="osx system pl__all" href="/osx/system/2015/10/28/osx-operates.html"><span class="pl__circle"></span><span class="pl__title">OSX常用操作笔记</span><span class="pl__date">Oct 2015</span></a>
+        
           <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/css3-snowflake.html"><span class="pl__circle"></span><span class="pl__title">JQuery+CSS3实现雪花飘落效果</span><span class="pl__date">Mar 2015</span></a>
         
           <a class="frontend cordova pl__all" href="/frontend/cordova/2015/03/20/cordova-first.html"><span class="pl__circle"></span><span class="pl__title">Cordova开发笔记</span><span class="pl__date">Mar 2015</span></a>
@@ -46,28 +54,73 @@
         
           <a class="frontend pl__all" href="/frontend/2015/02/16/random-nums-tool.html"><span class="pl__circle"></span><span class="pl__title">JQuery+HTML实现年会摇奖小工具</span><span class="pl__date">Feb 2015</span></a>
         
-          <a class="other pl__all" href="/other/2015/01/13/HelloWorld.html"><span class="pl__circle"></span><span class="pl__title">第一篇文章</span><span class="pl__date">Jan 2015</span></a>
-        
         </nav>
       </div> <!-- end #posts-list -->
     </aside> <!-- end #sidebar -->
 
     <div id="post">
       <div id="pjax">
-        <h2 id="hello-world">Hello World</h2>
+        <h2 id="osx常用操作笔记">OSX常用操作笔记</h2>
 
 <ul>
   <li>
-    <p>一直想在Github上搭建个个人博客，来做一些学习及生活方面的笔记，今天终于是实现了。建立博客的原因，一方面是供自己回忆与归纳整理，另一方面也作为与朋友们分享的一些内容，希望能够共同学习，共同进步。</p>
+    <p>环境变量设置：</p>
+
+    <ul>
+      <li>环境变量目录（按顺序加载）：</li>
+    </ul>
+
+ 		/etc/profile
+ 		/etc/bashrc
+ 		~/.bash_profile
+
+ 	设置格式如：
+ 		export PATH=path1:path2:${PATH}
   </li>
   <li>
-    <p>技术实现主要是通过Ruby的Jekyll框架（搭配3-Jekyll皮肤），在本地写好MarkDown笔记后编译同步到Github空间来发布<code>（想学来找我啊）</code>。</p>
+    <p>设置Finder以显示路径：</p>
+
+    <ul>
+      <li>执行命令：</li>
+    </ul>
+
+  		defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+  	拷贝路径快捷键：
+  		Option+Command+C
   </li>
   <li>
-    <p>内容不出意外将以Java知识为主，也会记录一些自己对编程的思考与学习笔记，当然也会有一些好用工具的分享，以及部分生活娱乐方面的分享，希望内容将能日渐充实起来，也希望能够分享出一些精彩的内容。</p>
+    <p>Host文件目录：</p>
+
+    <ul>
+      <li>/etc/hosts</li>
+    </ul>
+  </li>
+  <li>
+    <p>JDK目录：</p>
+
+    <ul>
+      <li>/Library/Java/JavaVirtualMachines/</li>
+    </ul>
+  </li>
+  <li>
+    <p>Finder 中显示隐藏文件：</p>
+
+    <pre><code>  defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder  //显示
+  defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder  //隐藏
+</code></pre>
+  </li>
+  <li>
+    <p>隐藏美式键盘：</p>
+
+    <pre><code>  备份 ~/Library/Preferences/com.apple.HIToolbox.plist
+  使用 plist编辑器打开 ~/Library/Preferences/com.apple.HIToolbox.plist
+  删除 AppleEnableInputSources 中不需要的节点。
+  重启系统
+</code></pre>
+
+    <p>​</p>
   </li>
 </ul>
-
 
       </div> <!-- end #pjax -->
 
@@ -86,11 +139,11 @@
     <script src="/assets/js/nprogress.js"></script>
     <script src="/assets/js/script.js"></script>
 
-    <!-- UpYun Advertise -->
+    <!-- UpYun Advertise
     <div class="adv">
     	<a href="http://www.upyun.com/">
     		<img src="/imgs/upyun_logo.png" />
     	</a>
-    </div>
+    </div> -->
   </body>
 </html>

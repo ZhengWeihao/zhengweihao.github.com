@@ -11,8 +11,8 @@ if ($(window).width() <= 1280) {
 
 // Variables
     tag1       = $('.pl__all'),
-    tag2       = $('.basic'),
-    tag3       = $('.backend'),
+    tag2       = $('.java'),
+    tag3       = $('.photo'),
     tag4       = $('.frontend'),
     tag5       = $('.lives');
 
