@@ -36,7 +36,7 @@
 
         <nav id="pl__container">
         
-          <a class="java jvm pl__all" href="/java/jvm/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+          <a class="photo style color pl__all" href="/photo/style/color/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
         
           <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
         
@@ -68,16 +68,16 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 22 Jan 2018 23:34:34 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:34:34 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:38:32 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:38:32 +0800</lastBuildDate>
 
     
     <item>
       <title>常见照片风格总结</title>
-      <link>place_your_blog_url_here/java/jvm/2018/01/22/photo-styles-colors.html</link>
+      <link>place_your_blog_url_here/photo/style/color/2018/01/22/photo-styles-colors.html</link>
       <pubDate>22 Jan 2018</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/java/jvm/2018/01/22/photo-styles-colors</guid>
+      <guid>place_your_blog_url_here/photo/style/color/2018/01/22/photo-styles-colors</guid>
       <description>&lt;h2 id=&quot;常见照片风格总结&quot;&gt;常见照片风格总结&lt;/h2&gt;
 
 &lt;ul&gt;

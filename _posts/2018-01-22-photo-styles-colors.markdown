@@ -2,7 +2,7 @@
 layout: index
 title: 常见照片风格总结
 date: 2018-01-21 17:42:18
-categories: [java, jvm]
+categories: [photo, style, color]
 ---
 
 常见照片风格总结
