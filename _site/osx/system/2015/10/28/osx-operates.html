@@ -66,27 +66,21 @@
   <li>
     <p>环境变量设置：</p>
 
-    <ul>
-      <li>环境变量目录（按顺序加载）：</li>
-    </ul>
-
- 		/etc/profile
- 		/etc/bashrc
- 		~/.bash_profile
+ 	环境变量目录（按顺序加载）：
+ 	/etc/profile
+ 	/etc/bashrc
+ 	~/.bash_profile
 
  	设置格式如：
- 		export PATH=path1:path2:${PATH}
+ 	export PATH=path1:path2:${PATH}
   </li>
   <li>
     <p>设置Finder以显示路径：</p>
 
-    <ul>
-      <li>执行命令：</li>
-    </ul>
+  	defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
-  		defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
   	拷贝路径快捷键：
-  		Option+Command+C
+  	Option+Command+C
   </li>
   <li>
     <p>Host文件目录：</p>

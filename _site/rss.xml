@@ -68,8 +68,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 22 Jan 2018 23:44:31 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:44:31 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:47:04 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:47:04 +0800</lastBuildDate>
 
     
     <item>
@@ -445,27 +445,21 @@
   &lt;li&gt;
     &lt;p&gt;环境变量设置：&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;环境变量目录（按顺序加载）：&lt;/li&gt;
-    &lt;/ul&gt;
-
- 		/etc/profile
- 		/etc/bashrc
- 		~/.bash_profile
+ 	环境变量目录（按顺序加载）：
+ 	/etc/profile
+ 	/etc/bashrc
+ 	~/.bash_profile
 
  	设置格式如：
- 		export PATH=path1:path2:${PATH}
+ 	export PATH=path1:path2:${PATH}
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;设置Finder以显示路径：&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;执行命令：&lt;/li&gt;
-    &lt;/ul&gt;
+  	defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
-  		defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
   	拷贝路径快捷键：
-  		Option+Command+C
+  	Option+Command+C
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Host文件目录：&lt;/p&gt;

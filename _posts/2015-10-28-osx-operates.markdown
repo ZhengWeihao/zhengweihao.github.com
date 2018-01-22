@@ -10,22 +10,20 @@ OSX常用操作笔记
 
 * 环境变量设置：
 
-   * 环境变量目录（按顺序加载）：
-
-   		/etc/profile
-   		/etc/bashrc
-   		~/.bash_profile
+   	环境变量目录（按顺序加载）：
+   	/etc/profile
+   	/etc/bashrc
+   	~/.bash_profile
    	
    	设置格式如：
-   		export PATH=path1:path2:${PATH}
+   	export PATH=path1:path2:${PATH}
 
 * 设置Finder以显示路径：
 
-    * 执行命令：
-
-    		defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+    	defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+    	
     	拷贝路径快捷键：
-    		Option+Command+C
+    	Option+Command+C
 
 * Host文件目录：
 
