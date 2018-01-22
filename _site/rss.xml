@@ -68,8 +68,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 22 Jan 2018 23:38:32 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:38:32 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:41:59 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:41:59 +0800</lastBuildDate>
 
     
     <item>
@@ -113,7 +113,7 @@
   &lt;/li&gt;
   &lt;li&gt;日系：
     &lt;ul&gt;
-      &lt;li&gt;整体调性：可轻微过曝&lt;/li&gt;
+      &lt;li&gt;整体调性：轻微过曝&lt;/li&gt;
       &lt;li&gt;高光：黄色&lt;/li&gt;
       &lt;li&gt;阴影：青色、蓝色、绿色&lt;/li&gt;
       &lt;li&gt;整体感受：干净、温暖&lt;/li&gt;
@@ -128,7 +128,7 @@
   &lt;/li&gt;
   &lt;li&gt;港调：
     &lt;ul&gt;
-      &lt;li&gt;整体调性：暗调、偏灰&lt;/li&gt;
+      &lt;li&gt;整体调性：暗调、朦胧&lt;/li&gt;
       &lt;li&gt;高光：棕色、黄色、洋红色&lt;/li&gt;
       &lt;li&gt;阴影：棕色、黄色&lt;/li&gt;
       &lt;li&gt;整体感受：老旧、浓郁&lt;/li&gt;
@@ -159,7 +159,7 @@
   &lt;li&gt;色彩感受：
     &lt;ul&gt;
       &lt;li&gt;活力：红色、橙色、黄色（高饱和、高明度）&lt;/li&gt;
-      &lt;li&gt;轻盈：蓝色（高饱和、高明度）&lt;/li&gt;
+      &lt;li&gt;轻盈：蓝色（低饱和、高明度）&lt;/li&gt;
       &lt;li&gt;怀旧：棕色、绿色（高饱和、低明度）&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;

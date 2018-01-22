@@ -27,7 +27,7 @@ categories: [photo, style, color]
     * ![复古](/imgs/photo-styles-colors/复古.jpg){:width="600px"}
     * ![复古2](/imgs/photo-styles-colors/复古2.jpg){:width="600px"}
 * 日系：
-  * 整体调性：可轻微过曝
+  * 整体调性：轻微过曝
   * 高光：黄色
   * 阴影：青色、蓝色、绿色
   * 整体感受：干净、温暖
@@ -36,7 +36,7 @@ categories: [photo, style, color]
     * ![日系](/imgs/photo-styles-colors/日系.jpg){:width="600px"}
     * ![日系2](/imgs/photo-styles-colors/日系2.jpeg){:width="600px"}
 * 港调：
-  * 整体调性：暗调、偏灰
+  * 整体调性：暗调、朦胧
   * 高光：棕色、黄色、洋红色
   * 阴影：棕色、黄色
   * 整体感受：老旧、浓郁
@@ -55,7 +55,7 @@ categories: [photo, style, color]
     * ![欧美2](/imgs/photo-styles-colors/欧美2.jpg){:width="600px"}
 * 色彩感受：
   * 活力：红色、橙色、黄色（高饱和、高明度）
-  * 轻盈：蓝色（高饱和、高明度）
+  * 轻盈：蓝色（低饱和、高明度）
   * 怀旧：棕色、绿色（高饱和、低明度）
 
 
