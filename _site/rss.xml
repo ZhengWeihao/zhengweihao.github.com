@@ -68,8 +68,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 22 Jan 2018 23:54:29 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:54:29 +0800</lastBuildDate>
+    <pubDate>Tue, 23 Jan 2018 00:06:51 +0800</pubDate>
+    <lastBuildDate>Tue, 23 Jan 2018 00:06:51 +0800</lastBuildDate>
 
     
     <item>
@@ -655,152 +655,153 @@ var it = setInterval(function() {
 
     &lt;p&gt;项目为Maven工程，所以使用pom文件管理jar包，具体依赖如下：&lt;/p&gt;
 
-  	  &lt;!--spring 依赖 --&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
-  	    &lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  		&lt;artifactId&gt;spring-context&lt;/artifactId&gt;
-  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  		&lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;
-  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  		&lt;artifactId&gt;spring-core&lt;/artifactId&gt;
-  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-aop&lt;/artifactId&gt;
-  	    &lt;version&gt;${spring.version}&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  		&lt;artifactId&gt;spring-web&lt;/artifactId&gt;
-  		&lt;version&gt;3.1.0.RELEASE&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;
-  	    &lt;version&gt;${spring.version}&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-tx&lt;/artifactId&gt;
-  	    &lt;version&gt;${spring.version}&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-orm&lt;/artifactId&gt;
-  	    &lt;version&gt;${spring.version}&lt;/version&gt;
-  	  &lt;/dependency&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
-  	    &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;
-  	    &lt;version&gt;${spring.version}&lt;/version&gt;
-  	  &lt;/dependency&gt;
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;!--spring 依赖 --&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-beans&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-context&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-context-support&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-core&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-aop&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-web&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;3.1.0.RELEASE&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-webmvc&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-tx&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-orm&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-jdbc&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;${spring.version}&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
 
-  	  &lt;!-- Freemarker --&gt;
-  	  &lt;dependency&gt;
-  	    &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
-  	    &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
-  	    &lt;version&gt;2.3.20&lt;/version&gt;
-  	  &lt;/dependency&gt;
+  &amp;lt;!-- Freemarker --&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.freemarker&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;freemarker&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;2.3.20&amp;lt;/version&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Spring支持与SpringMVC基本配置：&lt;/p&gt;
 
     &lt;p&gt;１、Spring基本配置，在Web.xml中添加相应地监听器，并指定配置文件（记得建立配置文件，否则会报FileNotFound异常），如下：&lt;/p&gt;
 
-  	&lt;!-- Spring 上下文配置文件 --&gt;
-  	&lt;context-param&gt;
-  		&lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;
-  		&lt;param-value&gt;classpath:applicationContext.xml&lt;/param-value&gt;
-  	&lt;/context-param&gt;
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- Spring 上下文配置文件 --&amp;gt;
+  &amp;lt;context-param&amp;gt;
+    &amp;lt;param-name&amp;gt;contextConfigLocation&amp;lt;/param-name&amp;gt;
+    &amp;lt;param-value&amp;gt;classpath:applicationContext.xml&amp;lt;/param-value&amp;gt;
+  &amp;lt;/context-param&amp;gt;
 
-  	&lt;!-- Spring 刷新Introspector防止内存泄露 --&gt;
-  	&lt;listener&gt;
-  		&lt;listener-class&gt;
-  			org.springframework.web.util.IntrospectorCleanupListener
-  		&lt;/listener-class&gt;
-  	&lt;/listener&gt;
+  &amp;lt;!-- Spring 刷新Introspector防止内存泄露 --&amp;gt;
+  &amp;lt;listener&amp;gt;
+    &amp;lt;listener-class&amp;gt;
+      org.springframework.web.util.IntrospectorCleanupListener
+    &amp;lt;/listener-class&amp;gt;
+  &amp;lt;/listener&amp;gt;
 
-  	&lt;!-- Spring 使用ContextLoaderListener加载ApplicationContext配置信息 --&gt;
-  	&lt;listener&gt;
-  		&lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;
-  	&lt;/listener&gt;
+  &amp;lt;!-- Spring 使用ContextLoaderListener加载ApplicationContext配置信息 --&amp;gt;
+  &amp;lt;listener&amp;gt;
+    &amp;lt;listener-class&amp;gt;org.springframework.web.context.ContextLoaderListener&amp;lt;/listener-class&amp;gt;
+  &amp;lt;/listener&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;　　２、SpringMVC配置(Web.xml中配置，并建立spring-mvc.xml配置文件）。&lt;/p&gt;
-
-    &lt;p&gt;　　在web.xml中添加DispatcherServlet的设定，并设置url-pattern为要捕获的路径规则（也可设置成类似*.action的格式），如下：&lt;/p&gt;
+    &lt;p&gt;２、SpringMVC配置(Web.xml中配置，并建立spring-mvc.xml配置文件）。
+  在web.xml中添加DispatcherServlet的设定，并设置url-pattern为要捕获的路径规则（也可设置成类似*.action的格式），如下：&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- Spring MVC --&amp;gt;
   &amp;lt;servlet&amp;gt;
-      &amp;lt;servlet-name&amp;gt;springDispatcherServlet&amp;lt;/servlet-name&amp;gt;
-      &amp;lt;servlet-class&amp;gt;org.springframework.web.servlet.DispatcherServlet&amp;lt;/servlet-class&amp;gt;
-      &amp;lt;init-param&amp;gt;
-          &amp;lt;param-name&amp;gt;contextConfigLocation&amp;lt;/param-name&amp;gt;
-          &amp;lt;param-value&amp;gt;classpath:spring-mvc.xml&amp;lt;/param-value&amp;gt;
-      &amp;lt;/init-param&amp;gt;
-      &amp;lt;load-on-startup&amp;gt;1&amp;lt;/load-on-startup&amp;gt;
+    &amp;lt;servlet-name&amp;gt;springDispatcherServlet&amp;lt;/servlet-name&amp;gt;
+    &amp;lt;servlet-class&amp;gt;org.springframework.web.servlet.DispatcherServlet&amp;lt;/servlet-class&amp;gt;
+    &amp;lt;init-param&amp;gt;
+      &amp;lt;param-name&amp;gt;contextConfigLocation&amp;lt;/param-name&amp;gt;
+      &amp;lt;param-value&amp;gt;classpath:spring-mvc.xml&amp;lt;/param-value&amp;gt;
+    &amp;lt;/init-param&amp;gt;
+    &amp;lt;load-on-startup&amp;gt;1&amp;lt;/load-on-startup&amp;gt;
   &amp;lt;/servlet&amp;gt;
   &amp;lt;servlet-mapping&amp;gt;
-      &amp;lt;servlet-name&amp;gt;springDispatcherServlet&amp;lt;/servlet-name&amp;gt;
-      &amp;lt;url-pattern&amp;gt;/&amp;lt;/url-pattern&amp;gt;
+    &amp;lt;servlet-name&amp;gt;springDispatcherServlet&amp;lt;/servlet-name&amp;gt;
+    &amp;lt;url-pattern&amp;gt;/&amp;lt;/url-pattern&amp;gt;
   &amp;lt;/servlet-mapping&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;　　在spring-mvc.xml中配置页面返回规则，并指定Spring自动扫描的路径，如下：&lt;/p&gt;
+    &lt;p&gt;在spring-mvc.xml中配置页面返回规则，并指定Spring自动扫描的路径，如下：&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt;  &amp;lt;!-- Spring MVC UrlMapping --&amp;gt;
-          &amp;lt;!-- Spring MVC UrlMapping --&amp;gt;
+      &amp;lt;!-- Spring MVC UrlMapping --&amp;gt;
   &amp;lt;bean id=&quot;urlMapping&quot;
-      class=&quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&quot; /&amp;gt;
+    class=&quot;org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping&quot; /&amp;gt;
   &amp;lt;bean
-      class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&amp;gt;
-      &amp;lt;property name=&quot;messageConverters&quot;&amp;gt;
-          &amp;lt;list&amp;gt;
-              &amp;lt;bean id=&quot;mappingStringHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.StringHttpMessageConverter&quot;&amp;gt;
-                  &amp;lt;property name=&quot;supportedMediaTypes&quot;&amp;gt;
-                      &amp;lt;list&amp;gt;
-                          &amp;lt;bean class=&quot;org.springframework.http.MediaType&quot;&amp;gt;
-                              &amp;lt;constructor-arg index=&quot;0&quot; value=&quot;text&quot; /&amp;gt;
-                              &amp;lt;constructor-arg index=&quot;1&quot; value=&quot;plain&quot; /&amp;gt;
-                              &amp;lt;constructor-arg index=&quot;2&quot; value=&quot;UTF-8&quot; /&amp;gt;
-                          &amp;lt;/bean&amp;gt;
-                      &amp;lt;/list&amp;gt;
-                      &amp;lt;!-- &amp;lt;list&amp;gt;  
-                          &amp;lt;value&amp;gt;text/plain;charset=UTF-8&amp;lt;/value&amp;gt;  
-                          &amp;lt;value&amp;gt;text/html;charset=UTF-8&amp;lt;/value&amp;gt;  
-                      &amp;lt;/list&amp;gt; --&amp;gt;
-                  &amp;lt;/property&amp;gt;
+    class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&amp;gt;
+    &amp;lt;property name=&quot;messageConverters&quot;&amp;gt;
+      &amp;lt;list&amp;gt;
+        &amp;lt;bean id=&quot;mappingStringHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.StringHttpMessageConverter&quot;&amp;gt;
+          &amp;lt;property name=&quot;supportedMediaTypes&quot;&amp;gt;
+            &amp;lt;list&amp;gt;
+              &amp;lt;bean class=&quot;org.springframework.http.MediaType&quot;&amp;gt;
+                &amp;lt;constructor-arg index=&quot;0&quot; value=&quot;text&quot; /&amp;gt;
+                &amp;lt;constructor-arg index=&quot;1&quot; value=&quot;plain&quot; /&amp;gt;
+                &amp;lt;constructor-arg index=&quot;2&quot; value=&quot;UTF-8&quot; /&amp;gt;
               &amp;lt;/bean&amp;gt;
-          &amp;lt;/list&amp;gt;
-      &amp;lt;/property&amp;gt;
+            &amp;lt;/list&amp;gt;
+            &amp;lt;!-- &amp;lt;list&amp;gt;  
+                      &amp;lt;value&amp;gt;text/plain;charset=UTF-8&amp;lt;/value&amp;gt;  
+                      &amp;lt;value&amp;gt;text/html;charset=UTF-8&amp;lt;/value&amp;gt;  
+                  &amp;lt;/list&amp;gt; --&amp;gt;
+          &amp;lt;/property&amp;gt;
+        &amp;lt;/bean&amp;gt;
+      &amp;lt;/list&amp;gt;
+    &amp;lt;/property&amp;gt;
   &amp;lt;/bean&amp;gt;
-	
+    
   &amp;lt;!-- 自动扫描转化 标有@Controller注解的类为bean --&amp;gt;
   &amp;lt;context:component-scan base-package=&quot;com.test&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;p&gt;　　３、编写控制器，以供测试，控制器代码如下：&lt;/p&gt;
+    &lt;p&gt;３、编写控制器，以供测试，控制器代码如下：&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt;  @Controller
   public class TestController {
-
-      @RequestMapping(&quot;/test_index&quot;)
-      public ModelAndView index(HttpServletRequest req) {
-          ModelAndView mav = new ModelAndView(&quot;index&quot;);
-          mav.addObject(&quot;pix&quot;, pix);
-          return mav;
-      }
+  
+    @RequestMapping(&quot;/test_index&quot;)
+    public ModelAndView index(HttpServletRequest req) {
+      ModelAndView mav = new ModelAndView(&quot;index&quot;);
+      mav.addObject(&quot;pix&quot;, pix);
+      return mav;
+    }
   }
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
@@ -811,8 +812,8 @@ var it = setInterval(function() {
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;添加Freemark的pom依赖，如下：
-  ​	
-  &lt;!-- Freemarker --&gt;
+  ​&lt;br /&gt;
+    &lt;!-- Freemarker --&gt;
     &lt;dependency&gt;
       &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
       &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
@@ -822,41 +823,43 @@ var it = setInterval(function() {
   &lt;li&gt;
     &lt;p&gt;在spring-mvc.xml中设置使用Freemark为视图解析器，如下：&lt;/p&gt;
 
-    &lt;p&gt;&lt;!-- FreeMarker基础支持 --&gt;&lt;br /&gt;
-     &lt;bean id=&quot;freemarkerConfigurer&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer&quot;&gt;  
-         &lt;property name=&quot;templateLoaderPath&quot; value=&quot;/view/&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;defaultEncoding&quot; value=&quot;UTF-8&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;freemarkerSettings&quot;&gt;
-             &lt;props&gt;
-                 &lt;prop key=&quot;template_update_delay&quot;&gt;10&lt;/prop&gt;
-                 &lt;prop key=&quot;locale&quot;&gt;zh_CN&lt;/prop&gt;
-                 &lt;prop key=&quot;datetime_format&quot;&gt;yyyy-MM-dd HH:mm:ss&lt;/prop&gt;
-                 &lt;prop key=&quot;date_format&quot;&gt;yyyy-MM-dd&lt;/prop&gt;
-                 &lt;prop key=&quot;number_format&quot;&gt;#.##&lt;/prop&gt;
-             &lt;/props&gt;
-         &lt;/property&gt;
-     &lt;/bean&gt;
-     &lt;!-- FreeMarker视图解析 --&gt;
-     &lt;bean id=&quot;viewResolver&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver&quot;&gt;  
-         &lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerView&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;suffix&quot; value=&quot;.ftl&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;contentType&quot; value=&quot;text/html;charset=UTF-8&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;exposeRequestAttributes&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;exposeSessionAttributes&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
-         &lt;property name=&quot;exposeSpringMacroHelpers&quot; value=&quot;true&quot;&gt;&lt;/property&gt;
-     &lt;/bean&gt;&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;&amp;lt;!-- FreeMarker基础支持 --&amp;gt;  
+&amp;lt;bean id=&quot;freemarkerConfigurer&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer&quot;&amp;gt;  
+    &amp;lt;property name=&quot;templateLoaderPath&quot; value=&quot;/view/&quot; /&amp;gt;
+    &amp;lt;property name=&quot;defaultEncoding&quot; value=&quot;UTF-8&quot; /&amp;gt;
+    &amp;lt;property name=&quot;freemarkerSettings&quot;&amp;gt;
+        &amp;lt;props&amp;gt;
+            &amp;lt;prop key=&quot;template_update_delay&quot;&amp;gt;10&amp;lt;/prop&amp;gt;
+            &amp;lt;prop key=&quot;locale&quot;&amp;gt;zh_CN&amp;lt;/prop&amp;gt;
+            &amp;lt;prop key=&quot;datetime_format&quot;&amp;gt;yyyy-MM-dd HH:mm:ss&amp;lt;/prop&amp;gt;
+            &amp;lt;prop key=&quot;date_format&quot;&amp;gt;yyyy-MM-dd&amp;lt;/prop&amp;gt;
+            &amp;lt;prop key=&quot;number_format&quot;&amp;gt;#.##&amp;lt;/prop&amp;gt;
+        &amp;lt;/props&amp;gt;
+    &amp;lt;/property&amp;gt;
+&amp;lt;/bean&amp;gt;
+&amp;lt;!-- FreeMarker视图解析 --&amp;gt;
+&amp;lt;bean id=&quot;viewResolver&quot; class=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver&quot;&amp;gt;  
+    &amp;lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.freemarker.FreeMarkerView&quot; /&amp;gt;
+    &amp;lt;property name=&quot;suffix&quot; value=&quot;.ftl&quot; /&amp;gt;
+    &amp;lt;property name=&quot;contentType&quot; value=&quot;text/html;charset=UTF-8&quot; /&amp;gt;
+    &amp;lt;property name=&quot;exposeRequestAttributes&quot; value=&quot;true&quot; /&amp;gt;
+    &amp;lt;property name=&quot;exposeSessionAttributes&quot; value=&quot;true&quot; /&amp;gt;
+    &amp;lt;property name=&quot;exposeSpringMacroHelpers&quot; value=&quot;true&quot; /&amp;gt;
+&amp;lt;/bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;控制器中进行测试&lt;/p&gt;
 
-    &lt;p&gt;@RequestMapping(“/test_ftl”)
- 	public ModelAndView index(HttpServletRequest req) {
- 		String pix = req.getParameter(“pix”);&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;@RequestMapping(&quot;/test_ftl&quot;)
+public ModelAndView index(HttpServletRequest req) {
+  String pix = req.getParameter(&quot;pix&quot;);
 
- 		ModelAndView mav = new ModelAndView(“index”);
- 		mav.addObject(“pix”, pix);
- 		return mav;
- 	}
+  ModelAndView mav = new ModelAndView(&quot;index&quot;);
+  mav.addObject(&quot;pix&quot;, pix);
+  return mav;
+}
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -866,65 +869,69 @@ var it = setInterval(function() {
   &lt;li&gt;
     &lt;p&gt;在pom文件中添加对Jackson的依赖，如下：&lt;/p&gt;
 
-    &lt;p&gt;&lt;!-- JSON for Spring MVC --&gt;
-   	  &lt;dependency&gt;
-   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
-   		&lt;artifactId&gt;jackson-core-asl&lt;/artifactId&gt;
-   		&lt;version&gt;1.8.0&lt;/version&gt;
-   	  &lt;/dependency&gt;
-   	  &lt;dependency&gt;
-   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
-   		&lt;artifactId&gt;jackson-mapper-asl&lt;/artifactId&gt;
-   		&lt;version&gt;1.9.7&lt;/version&gt;
-   	  &lt;/dependency&gt;
-   	  &lt;dependency&gt;
-   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
-   		&lt;artifactId&gt;jackson-jaxrs&lt;/artifactId&gt;
-   		&lt;version&gt;1.8.0&lt;/version&gt;
-   	  &lt;/dependency&gt;
-   	  &lt;dependency&gt;
-   		&lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
-   		&lt;artifactId&gt;jackson-xc&lt;/artifactId&gt;
-   		&lt;version&gt;1.8.0&lt;/version&gt;
-   	  &lt;/dependency&gt;&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;&amp;lt;!-- JSON for Spring MVC --&amp;gt;
+&amp;lt;dependency&amp;gt;
+&amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
+&amp;lt;artifactId&amp;gt;jackson-core-asl&amp;lt;/artifactId&amp;gt;
+&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+&amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
+&amp;lt;artifactId&amp;gt;jackson-mapper-asl&amp;lt;/artifactId&amp;gt;
+&amp;lt;version&amp;gt;1.9.7&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+&amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
+&amp;lt;artifactId&amp;gt;jackson-jaxrs&amp;lt;/artifactId&amp;gt;
+&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+&amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
+&amp;lt;artifactId&amp;gt;jackson-xc&amp;lt;/artifactId&amp;gt;
+&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在spring-mvc.xml中配置JSON格式的支持，如下：&lt;/p&gt;
 
-    &lt;p&gt;&lt;!-- Spring MVC JSON输出格式 --&gt;
- 	&lt;bean id=&quot;mappingJacksonHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.json.MappingJacksonHttpMessageConverter&quot;&gt;
- 		&lt;property name=&quot;supportedMediaTypes&quot;&gt;
- 			&lt;list&gt;
- 				&lt;value&gt;application/json;charset=UTF-8&lt;/value&gt;
- 				&lt;value&gt;text/html;charset=UTF-8&lt;/value&gt;
- 			&lt;/list&gt;
- 		&lt;/property&gt;
- 	&lt;/bean&gt;&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;&amp;lt;!-- Spring MVC JSON输出格式 --&amp;gt;
+&amp;lt;bean id=&quot;mappingJacksonHttpMessageConverter&quot; class=&quot;org.springframework.http.converter.json.MappingJacksonHttpMessageConverter&quot;&amp;gt;
+  &amp;lt;property name=&quot;supportedMediaTypes&quot;&amp;gt;
+    &amp;lt;list&amp;gt;
+      &amp;lt;value&amp;gt;application/json;charset=UTF-8&amp;lt;/value&amp;gt;
+      &amp;lt;value&amp;gt;text/html;charset=UTF-8&amp;lt;/value&amp;gt;
+    &amp;lt;/list&amp;gt;
+  &amp;lt;/property&amp;gt;
+&amp;lt;/bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
     &lt;p&gt;并将Jackson的实体引入到AnnotationMethodHandlerAdapter类的messageConverters属性当中，如下：&lt;/p&gt;
 
- 	&lt;bean class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&gt;
- 		&lt;property name=&quot;messageConverters&quot;&gt;
- 			&lt;list&gt;
- 				&lt;!-- JSON文本输出格式 --&gt;
- 				&lt;ref bean=&quot;mappingJacksonHttpMessageConverter&quot;&gt;&lt;/ref&gt;
- 				&lt;!-- 简单文本输出格式 --&gt;
- 				&lt;ref bean=&quot;mappingStringHttpMessageConverter&quot;&gt;&lt;/ref&gt;
- 			&lt;/list&gt;
- 		&lt;/property&gt;
- 	&lt;/bean&gt;
+    &lt;pre&gt;&lt;code&gt;&amp;lt;bean class=&quot;org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter&quot;&amp;gt;
+  &amp;lt;property name=&quot;messageConverters&quot;&amp;gt;
+    &amp;lt;list&amp;gt;
+      &amp;lt;!-- JSON文本输出格式 --&amp;gt;
+      &amp;lt;ref bean=&quot;mappingJacksonHttpMessageConverter&quot; /&amp;gt;
+      &amp;lt;!-- 简单文本输出格式 --&amp;gt;
+      &amp;lt;ref bean=&quot;mappingStringHttpMessageConverter&quot; /&amp;gt;
+    &amp;lt;/list&amp;gt;
+  &amp;lt;/property&amp;gt;
+&amp;lt;/bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;在控制器中编写JSON格式测试方法，如下：&lt;/p&gt;
 
-    &lt;p&gt;@RequestMapping(“/test_json”)
- 	@ResponseBody
- 	public JSONObject testJson(Long id, String name) {
- 		JSONObject obj = new JSONObject();
- 		obj.put(“id”, id);
- 		obj.put(“name”, name);
- 		return obj;
- 	}&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;@RequestMapping(&quot;/test_json&quot;)
+@ResponseBody
+public JSONObject testJson(Long id, String name) {
+  JSONObject obj = new JSONObject();
+  obj.put(&quot;id&quot;, id);
+  obj.put(&quot;name&quot;, name);
+  return obj;
+}
+&lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
