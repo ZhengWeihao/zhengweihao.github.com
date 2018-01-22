@@ -161,7 +161,7 @@ SpringMVC集成Freemark及JSON格式输出
 			}
 		}
 
-* 至此，第一部分SpringMVC基本配置完成，第二部分内容为SpringMVC集成Freemark输出模板页面。
+
 
 ### 第二部分：SpringMVC集成Freemark输出模板页面 ###
 
@@ -210,7 +210,8 @@ SpringMVC集成Freemark及JSON格式输出
    		mav.addObject("pix", pix);
    		return mav;
    	}
-* 第二部分SpringMVC集成Freemark输出模板页面至此完成。
+
+
 
 ### 第三部分：配置SpringMVC输出JSON格式的数据 ###
 
@@ -274,9 +275,4 @@ SpringMVC集成Freemark及JSON格式输出
    		return obj;
    	}
 
-* 至此，SpringMVC对输出JSON格式的配置也已完成。
 
-
-> 　　到此为止，已经可以使用SpringMVC进行常见的开发工作，如有更多内容将会陆续补充上来。
-
-​		

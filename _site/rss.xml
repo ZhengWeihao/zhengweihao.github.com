@@ -68,8 +68,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 22 Jan 2018 23:41:59 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:41:59 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:44:31 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:44:31 +0800</lastBuildDate>
 
     
     <item>
@@ -809,9 +809,6 @@ var it = setInterval(function() {
   }
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;至此，第一部分SpringMVC基本配置完成，第二部分内容为SpringMVC集成Freemark输出模板页面。&lt;/p&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;第二部分springmvc集成freemark输出模板页面&quot;&gt;第二部分：SpringMVC集成Freemark输出模板页面&lt;/h3&gt;
@@ -865,9 +862,6 @@ var it = setInterval(function() {
  		mav.addObject(“pix”, pix);
  		return mav;
  	}
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;第二部分SpringMVC集成Freemark输出模板页面至此完成。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -937,16 +931,8 @@ var it = setInterval(function() {
  		return obj;
  	}&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;至此，SpringMVC对输出JSON格式的配置也已完成。&lt;/p&gt;
-  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;　　到此为止，已经可以使用SpringMVC进行常见的开发工作，如有更多内容将会陆续补充上来。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;​&lt;/p&gt;
 </description>
     </item>
     
