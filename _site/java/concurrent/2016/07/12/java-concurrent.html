@@ -36,6 +36,8 @@
 
         <nav id="pl__container">
         
+          <a class="java idea pl__all" href="/java/idea/2018/01/23/idea-keymap.html"><span class="pl__circle"></span><span class="pl__title">IDEA常用操作</span><span class="pl__date">Jan 2018</span></a>
+        
           <a class="photo style color pl__all" href="/photo/style/color/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
         
           <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
@@ -69,6 +71,11 @@
       <li>线程：进程中负责执行程序的执行单元</li>
       <li>并发：以可独立执行的进程集合的方式编程</li>
       <li>并行：以可同时执行的计算指令方式编程</li>
+    </ul>
+  </li>
+  <li>背景：
+    <ul>
+      <li>串行服务的低响应速度及高CPU空闲率</li>
     </ul>
   </li>
   <li>多线程实现原理：
@@ -121,11 +128,7 @@
           <li>共享内存的并发模型中，同步是显式进行，如：synchronized</li>
           <li>消息传递的并发模型中，消息发送必须在消息接收之前，所以同步是隐式的：
             <ul>
-              <li>可见性问题：
-                <ul>
-                  <li>volatile、synchronized</li>
-                </ul>
-              </li>
+              <li>可见性问题：工作内存、主内存</li>
             </ul>
           </li>
         </ul>
@@ -136,6 +139,16 @@
           <li>ExecutorService executor = Excutors.newSingleThreadExecutor();// 只有一个线程的线程池，操作不限数量的线程队列（FIFO队列 -&gt; 排队处理）</li>
         </ul>
       </li>
+    </ul>
+  </li>
+  <li>线程池：
+    <ul>
+      <li>背景：
+        <ul>
+          <li>频繁使用线程的场景中，线程创建、销毁开销大，甚至会造成OOM</li>
+        </ul>
+      </li>
+      <li>​</li>
     </ul>
   </li>
   <li>volatile关键字

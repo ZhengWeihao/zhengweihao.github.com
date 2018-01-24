@@ -36,6 +36,8 @@
 
         <nav id="pl__container">
         
+          <a class="java idea pl__all" href="/java/idea/2018/01/23/idea-keymap.html"><span class="pl__circle"></span><span class="pl__title">IDEA常用操作</span><span class="pl__date">Jan 2018</span></a>
+        
           <a class="photo style color pl__all" href="/photo/style/color/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
         
           <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
@@ -68,9 +70,103 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 23 Jan 2018 00:06:51 +0800</pubDate>
-    <lastBuildDate>Tue, 23 Jan 2018 00:06:51 +0800</lastBuildDate>
+    <pubDate>Wed, 24 Jan 2018 15:27:48 +0800</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2018 15:27:48 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>IDEA常用操作</title>
+      <link>place_your_blog_url_here/java/idea/2018/01/23/idea-keymap.html</link>
+      <pubDate>23 Jan 2018</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/java/idea/2018/01/23/idea-keymap</guid>
+      <description>&lt;h2 id=&quot;idea常用操作&quot;&gt;IDEA常用操作&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;初始设置：
+    &lt;ul&gt;
+      &lt;li&gt;Maven设置（UserSetting、Automatically Download）&lt;/li&gt;
+      &lt;li&gt;JDK设置&lt;/li&gt;
+      &lt;li&gt;FileEncoding&lt;/li&gt;
+      &lt;li&gt;自动导入包：General-AutoImport&lt;/li&gt;
+      &lt;li&gt;打开多个项目方式：Appearance-SystemSetting-Project Opering&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;常用实时模板：
+    &lt;ul&gt;
+      &lt;li&gt;psvm&lt;/li&gt;
+      &lt;li&gt;sout&lt;/li&gt;
+      &lt;li&gt;fori&lt;/li&gt;
+      &lt;li&gt;ifn&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;调试：
+    &lt;ul&gt;
+      &lt;li&gt;F7：进入下一步，且进入方法体&lt;/li&gt;
+      &lt;li&gt;F8：进入下一步，且不进入方法体&lt;/li&gt;
+      &lt;li&gt;F9：恢复运行，且在下个断点暂停&lt;/li&gt;
+      &lt;li&gt;alt+F8：输入代码并查看执行结果&lt;/li&gt;
+      &lt;li&gt;Condition：右击断点，选择Condition&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;常用快捷键：
+    &lt;ul&gt;
+      &lt;li&gt;光标操作：
+        &lt;ul&gt;
+          &lt;li&gt;跳转指定行：ctrl+g（command+g）&lt;/li&gt;
+          &lt;li&gt;进入光标所在方法：ctrl+b（command+b）&lt;/li&gt;
+          &lt;li&gt;返回历史光标位置：alt+ctrl+←/→（alt+command+←/→）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;一般操作：
+        &lt;ul&gt;
+          &lt;li&gt;代码提示：ctrl+space（control+space）&lt;/li&gt;
+          &lt;li&gt;导入包：alt+enter（option+enter）&lt;/li&gt;
+          &lt;li&gt;查找定位：ctrl+shift+n（command+shift+n） [CLASS_NAME:LINE_NUMBER]&lt;/li&gt;
+          &lt;li&gt;代码生成：alt+insert（control+n, control+enter）&lt;/li&gt;
+          &lt;li&gt;切换窗口：ctrl+tab（control+tab）&lt;/li&gt;
+          &lt;li&gt;最近打开的文件：ctrl+e（command+e）&lt;/li&gt;
+          &lt;li&gt;切换全屏模式：shift+ctrl+f12（shift+command+f12）&lt;/li&gt;
+          &lt;li&gt;显示LIveTemplate：ctrl+j（command+j）&lt;/li&gt;
+          &lt;li&gt;面板：
+            &lt;ul&gt;
+              &lt;li&gt;导航面板：ctrl+1（command+1）&lt;/li&gt;
+              &lt;li&gt;控制台面板：ctrl+4（command+4）&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;查看当前类的所有方法：ctrl+f12(command+f12)&lt;/li&gt;
+          &lt;li&gt;错误解决：alt+enter（option+enter）&lt;/li&gt;
+          &lt;li&gt;引入变量：ctrl+alt+v（command+option+v）&lt;/li&gt;
+          &lt;li&gt;运行代码：alt+shift+f10（option+shift+f10）&lt;/li&gt;
+          &lt;li&gt;重命名：shift+f6&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;编辑区：
+        &lt;ul&gt;
+          &lt;li&gt;删除一行：ctrl+y（command+y）&lt;/li&gt;
+          &lt;li&gt;复制一行：ctrl+d（command+d）&lt;/li&gt;
+          &lt;li&gt;注释：ctrl+/（command+/）&lt;/li&gt;
+          &lt;li&gt;按语法选择：[shift] ctrl+w（command+w）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;查找：
+        &lt;ul&gt;
+          &lt;li&gt;类/资源查找：ctrl+n（command+n）&lt;/li&gt;
+          &lt;li&gt;全局查找：shift+shift&lt;/li&gt;
+          &lt;li&gt;内容查找：ctrl+shift+n（command+shift+n）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;格式化：
+        &lt;ul&gt;
+          &lt;li&gt;import：ctrl+alt+o（command+alt+o）&lt;/li&gt;
+          &lt;li&gt;代码：ctrl+alt+l（command+alt+l）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>常见照片风格总结</title>
@@ -84,8 +180,8 @@
   &lt;li&gt;小清新：
     &lt;ul&gt;
       &lt;li&gt;整体调性：亮调、通透&lt;/li&gt;
-      &lt;li&gt;高光：青色、蓝色&lt;/li&gt;
-      &lt;li&gt;阴影：青色、蓝色、绿色&lt;/li&gt;
+      &lt;li&gt;高光：&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#50c9e0&quot;&gt;蓝色&lt;/font&gt;&lt;/li&gt;
+      &lt;li&gt;阴影：&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#50c9e0&quot;&gt;蓝色&lt;/font&gt;、&lt;font color=&quot;#25a726&quot;&gt;绿色&lt;/font&gt;&lt;/li&gt;
       &lt;li&gt;整体感受：轻快明亮&lt;/li&gt;
       &lt;li&gt;常见元素：蓝天、绿草、微风&lt;/li&gt;
       &lt;li&gt;典型图例：
@@ -99,8 +195,8 @@
   &lt;li&gt;复古：
     &lt;ul&gt;
       &lt;li&gt;整体调性：暗调、偏灰、部分低饱和&lt;/li&gt;
-      &lt;li&gt;高光：青色、绿色、黄色&lt;/li&gt;
-      &lt;li&gt;阴影：青色、绿色、黄色&lt;/li&gt;
+      &lt;li&gt;高光：&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#25a726&quot;&gt;绿色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;&lt;/li&gt;
+      &lt;li&gt;阴影：&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#25a726&quot;&gt;绿色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;&lt;/li&gt;
       &lt;li&gt;整体感受：阴郁&lt;/li&gt;
       &lt;li&gt;常见元素：老墙、老家具、木地板&lt;/li&gt;
       &lt;li&gt;典型图例：
@@ -114,8 +210,8 @@
   &lt;li&gt;日系：
     &lt;ul&gt;
       &lt;li&gt;整体调性：轻微过曝&lt;/li&gt;
-      &lt;li&gt;高光：黄色&lt;/li&gt;
-      &lt;li&gt;阴影：青色、蓝色、绿色&lt;/li&gt;
+      &lt;li&gt;高光：&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;&lt;/li&gt;
+      &lt;li&gt;阴影：&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#50c9e0&quot;&gt;蓝色&lt;/font&gt;、&lt;font color=&quot;#25a726&quot;&gt;绿色&lt;/font&gt;&lt;/li&gt;
       &lt;li&gt;整体感受：干净、温暖&lt;/li&gt;
       &lt;li&gt;常见元素：夕阳光&lt;/li&gt;
       &lt;li&gt;典型图例：
@@ -129,8 +225,8 @@
   &lt;li&gt;港调：
     &lt;ul&gt;
       &lt;li&gt;整体调性：暗调、朦胧&lt;/li&gt;
-      &lt;li&gt;高光：棕色、黄色、洋红色&lt;/li&gt;
-      &lt;li&gt;阴影：棕色、黄色&lt;/li&gt;
+      &lt;li&gt;高光：&lt;font color=&quot;#846e54&quot;&gt;棕色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;、&lt;font color=&quot;#da37c9&quot;&gt;洋红色&lt;/font&gt;&lt;/li&gt;
+      &lt;li&gt;阴影：&lt;font color=&quot;#846e54&quot;&gt;棕色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;&lt;/li&gt;
       &lt;li&gt;整体感受：老旧、浓郁&lt;/li&gt;
       &lt;li&gt;常见元素：大波浪、旗袍/纱裙&lt;/li&gt;
       &lt;li&gt;典型图例：
@@ -144,8 +240,8 @@
   &lt;li&gt;欧美：
     &lt;ul&gt;
       &lt;li&gt;整体调性：暗调&lt;/li&gt;
-      &lt;li&gt;高光：橙色、黄色&lt;/li&gt;
-      &lt;li&gt;阴影：蓝色、青色、绿色&lt;/li&gt;
+      &lt;li&gt;高光：&lt;font color=&quot;#e49e28&quot;&gt;橙色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;&lt;/li&gt;
+      &lt;li&gt;阴影：&lt;font color=&quot;#50c9e0&quot;&gt;蓝色&lt;/font&gt;、&lt;font color=&quot;#4ce6e3&quot;&gt;青色&lt;/font&gt;、&lt;font color=&quot;#25a726&quot;&gt;绿色&lt;/font&gt;&lt;/li&gt;
       &lt;li&gt;整体感受：个性另类&lt;/li&gt;
       &lt;li&gt;常见元素：灰墙、高楼&lt;/li&gt;
       &lt;li&gt;典型图例：
@@ -156,18 +252,62 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;测试说明：
+    &lt;ul&gt;
+      &lt;li&gt;测试目的在于调整色彩以验证以上观点，须主观上排除照片本身题材的干扰&lt;/li&gt;
+      &lt;li&gt;测试原图：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;小清新：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example_小清新.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;复古：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example_复古.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;日系：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example_日系.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;港调：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example_港调.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;欧美：
+        &lt;ul&gt;
+          &lt;li&gt;&lt;img src=&quot;/imgs/photo-styles-colors/example_欧美.png&quot; alt=&quot;example_小清新&quot; width=&quot;600px&quot; /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;色彩感受：
     &lt;ul&gt;
-      &lt;li&gt;活力：红色、橙色、黄色（高饱和、高明度）&lt;/li&gt;
-      &lt;li&gt;轻盈：蓝色（低饱和、高明度）&lt;/li&gt;
-      &lt;li&gt;怀旧：棕色、绿色（高饱和、低明度）&lt;/li&gt;
+      &lt;li&gt;活力、热情：&lt;font color=&quot;#f94646&quot;&gt;红色&lt;/font&gt;、&lt;font color=&quot;#e49e28&quot;&gt;橙色&lt;/font&gt;、&lt;font color=&quot;#f9f846&quot;&gt;黄色&lt;/font&gt;（高饱和、高明度）&lt;/li&gt;
+      &lt;li&gt;静谧、轻盈：&lt;font color=&quot;#50c9e0&quot;&gt;蓝色&lt;/font&gt;（低饱和、高明度），多应用于小清新风格&lt;/li&gt;
+      &lt;li&gt;怀旧、忧伤：&lt;font color=&quot;#846e54&quot;&gt;棕色&lt;/font&gt;（高饱和、低明度），多应用于复古风格&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;小技巧：
+    &lt;ul&gt;
+      &lt;li&gt;利用&lt;strong&gt;对比色&lt;/strong&gt;区分元素，凸显画面立体感或营造趣味感&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;统一&lt;/strong&gt;画面色调，排除画面中多余的干扰物&lt;/li&gt;
+      &lt;li&gt;对于细节多、颜色杂的照片，可以尝试调整为&lt;strong&gt;黑白色&lt;/strong&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;注：&lt;/p&gt;
 
-&lt;p&gt;　　以上内容仅个人总结，仅供参考。参考图片均来自网络，侵删。&lt;/p&gt;
+&lt;p&gt;　　各种风格的取色带有个人主观印象，不具备普适性，仅供参考。&lt;/p&gt;
+
+&lt;p&gt;　　参考图片均来自网络，侵删。&lt;/p&gt;
 </description>
     </item>
     
@@ -227,6 +367,11 @@
       &lt;li&gt;并行：以可同时执行的计算指令方式编程&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;背景：
+    &lt;ul&gt;
+      &lt;li&gt;串行服务的低响应速度及高CPU空闲率&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;多线程实现原理：
     &lt;ul&gt;
       &lt;li&gt;时间片调度&lt;/li&gt;
@@ -277,11 +422,7 @@
           &lt;li&gt;共享内存的并发模型中，同步是显式进行，如：synchronized&lt;/li&gt;
           &lt;li&gt;消息传递的并发模型中，消息发送必须在消息接收之前，所以同步是隐式的：
             &lt;ul&gt;
-              &lt;li&gt;可见性问题：
-                &lt;ul&gt;
-                  &lt;li&gt;volatile、synchronized&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
+              &lt;li&gt;可见性问题：工作内存、主内存&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -292,6 +433,16 @@
           &lt;li&gt;ExecutorService executor = Excutors.newSingleThreadExecutor();// 只有一个线程的线程池，操作不限数量的线程队列（FIFO队列 -&amp;gt; 排队处理）&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;线程池：
+    &lt;ul&gt;
+      &lt;li&gt;背景：
+        &lt;ul&gt;
+          &lt;li&gt;频繁使用线程的场景中，线程创建、销毁开销大，甚至会造成OOM&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;​&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;volatile关键字
