@@ -7,8 +7,6 @@ categories: [frontend, cordova]
 
 Cordova开发笔记
 ---
-> 　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。
-
 ### Cordova基本开发环境
 
 * 安装
@@ -29,7 +27,7 @@ Cordova开发笔记
 
 * hello world
 
-　　基本操作命令比较简单就直接记录命令了：
+
 
 		// 创建项目
 		cordova create {project name} [{project package} {app name}]

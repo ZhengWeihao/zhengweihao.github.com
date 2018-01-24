@@ -63,10 +63,6 @@
     <div id="post">
       <div id="pjax">
         <h2 id="cordova开发笔记">Cordova开发笔记</h2>
-<blockquote>
-  <p>　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。</p>
-</blockquote>
-
 <h3 id="cordova基本开发环境">Cordova基本开发环境</h3>
 
 <ul>
@@ -88,22 +84,22 @@
 <p>　　而如果还需要开发Android应用，则还需要下载安装<a href="http://developer.android.com/tools/help/adt.html" title="Android Development Tools">安卓开发工具</a>，打开SDK Manager下载Cordova需要的SDK版本（当前使用21版本），并配置ANDROID_HOME环境变量即可。</p>
 
 <ul>
-  <li>hello world</li>
-</ul>
+  <li>
+    <p>hello world</p>
 
-<p>　　基本操作命令比较简单就直接记录命令了：</p>
-
-<pre><code>	// 创建项目
-	cordova create {project name} [{project package} {app name}]
-	// 添加环境
-	cordova platform add [android|ios|...]
-	// 添加插件
-	cordova plugin add {plugin package}
-	// 运行环境
-	cordova run [android|ios|...]
-	// 打包项目（需要先将证书文件拷到ant-build目录）
-	cordova build -release
+    <pre><code>  // 创建项目
+  cordova create {project name} [{project package} {app name}]
+  // 添加环境
+  cordova platform add [android|ios|...]
+  // 添加插件
+  cordova plugin add {plugin package}
+  // 运行环境
+  cordova run [android|ios|...]
+  // 打包项目（需要先将证书文件拷到ant-build目录）
+  cordova build -release
 </code></pre>
+  </li>
+</ul>
 
       </div> <!-- end #pjax -->
 

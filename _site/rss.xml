@@ -70,8 +70,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Wed, 24 Jan 2018 15:27:48 +0800</pubDate>
-    <lastBuildDate>Wed, 24 Jan 2018 15:27:48 +0800</lastBuildDate>
+    <pubDate>Wed, 24 Jan 2018 15:47:23 +0800</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2018 15:47:23 +0800</lastBuildDate>
 
     
     <item>
@@ -743,10 +743,6 @@ var it = setInterval(function() {
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/frontend/cordova/2015/03/20/cordova-first</guid>
       <description>&lt;h2 id=&quot;cordova开发笔记&quot;&gt;Cordova开发笔记&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;　　最近接触了一个需要将网页打包成为手机App，以达到快速成型目的的项目，故而需要使用Cordova来进行开发，也因此进行了一些对于使用Cordova开发手机App的实践，在这里记录Cordova的使用，以及这段时间以来的心得体会。&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;h3 id=&quot;cordova基本开发环境&quot;&gt;Cordova基本开发环境&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -768,22 +764,22 @@ var it = setInterval(function() {
 &lt;p&gt;　　而如果还需要开发Android应用，则还需要下载安装&lt;a href=&quot;http://developer.android.com/tools/help/adt.html&quot; title=&quot;Android Development Tools&quot;&gt;安卓开发工具&lt;/a&gt;，打开SDK Manager下载Cordova需要的SDK版本（当前使用21版本），并配置ANDROID_HOME环境变量即可。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;hello world&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;hello world&lt;/p&gt;
 
-&lt;p&gt;　　基本操作命令比较简单就直接记录命令了：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;	// 创建项目
-	cordova create {project name} [{project package} {app name}]
-	// 添加环境
-	cordova platform add [android|ios|...]
-	// 添加插件
-	cordova plugin add {plugin package}
-	// 运行环境
-	cordova run [android|ios|...]
-	// 打包项目（需要先将证书文件拷到ant-build目录）
-	cordova build -release
+    &lt;pre&gt;&lt;code&gt;  // 创建项目
+  cordova create {project name} [{project package} {app name}]
+  // 添加环境
+  cordova platform add [android|ios|...]
+  // 添加插件
+  cordova plugin add {plugin package}
+  // 运行环境
+  cordova run [android|ios|...]
+  // 打包项目（需要先将证书文件拷到ant-build目录）
+  cordova build -release
 &lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
