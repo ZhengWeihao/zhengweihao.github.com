@@ -4,7 +4,7 @@ title:      "IDEA常用操作"
 subtitle:   ""
 date:       2018-01-22 21:08:17
 author:     "ZhengWeihao"
-header-img: "img/post-bg-2015.jpg"
+header-img: "imgs/post-bg-default.jpg"
 tags:
     - Java
     - IDEA

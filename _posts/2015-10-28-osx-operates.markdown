@@ -4,7 +4,7 @@ title:      "OSX常用操作笔记"
 subtitle:   ""
 date:       2015-10-28 14:39:51
 author:     "ZhengWeihao"
-header-img: "img/post-bg-2015.jpg"
+header-img: "imgs/post-bg-default.jpg"
 tags:
     - System
     - OSX

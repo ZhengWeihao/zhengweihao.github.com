@@ -4,7 +4,7 @@ title:      "SpringMVC集成Freemark及JSON格式输出"
 subtitle:   ""
 date:       2015-02-16 12:59:39
 author:     "ZhengWeihao"
-header-img: "img/post-bg-2015.jpg"
+header-img: "imgs/post-bg-default.jpg"
 tags:
     - Java
     - Spring

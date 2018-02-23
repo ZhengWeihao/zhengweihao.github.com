@@ -4,7 +4,7 @@ title:      "Cordova开发笔记"
 subtitle:   ""
 date:       2015-03-19 18:13:40
 author:     "ZhengWeihao"
-header-img: "img/post-bg-2015.jpg"
+header-img: "imgs/post-bg-default.jpg"
 tags:
     - Cordova
 ---

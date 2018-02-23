@@ -4,7 +4,7 @@ title:      "JQuery+CSS3实现雪花飘落效果"
 subtitle:   ""
 date:       2015-03-19 18:13:40
 author:     "ZhengWeihao"
-header-img: "img/post-bg-2015.jpg"
+header-img: "imgs/post-bg-default.jpg"
 tags:
     - JavaScript
     - CSS3
