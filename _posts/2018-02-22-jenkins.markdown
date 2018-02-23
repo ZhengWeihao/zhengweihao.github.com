@@ -1,8 +1,13 @@
 ---
-layout: index
-title: Jenkins学习笔记
-date: 2018-02-22 20:11:27
-categories: [java, jenkins]
+layout:     post
+title:      "Jenkins学习笔记"
+subtitle:   ""
+date:       2018-02-22 20:11:27
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
+    - Jenkins
 ---
 
 Jenkins学习笔记

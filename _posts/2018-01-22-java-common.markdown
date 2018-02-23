@@ -1,8 +1,12 @@
 ---
-layout: index
-title: Java常用操作笔记
-date: 2018-01-21 17:42:18
-categories: [java]
+layout:     post
+title:      "Java常用操作笔记"
+subtitle:   ""
+date:       2018-01-21 17:42:18
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
 ---
 
 Java常用操作笔记

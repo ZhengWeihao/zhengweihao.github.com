@@ -1,8 +1,13 @@
 ---
-layout: index
-title: JQuery+CSS3实现雪花飘落效果
-date: 2015-03-19 18:13:40
-categories: [frontend, cordova]
+layout:     post
+title:      "JQuery+CSS3实现雪花飘落效果"
+subtitle:   ""
+date:       2015-03-19 18:13:40
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - JavaScript
+    - CSS3
 ---
 
 JQuery+CSS3实现雪花飘落效果

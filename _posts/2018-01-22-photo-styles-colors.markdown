@@ -1,8 +1,13 @@
 ---
-layout: index
-title: 常见照片风格色调总结
-date: 2018-01-21 17:42:18
-categories: [photo, style, color]
+layout:     post
+title:      "常见照片风格色调总结"
+subtitle:   ""
+date:       2018-01-21 17:42:18
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Photo
+    - Color
 ---
 
 常见照片风格色调总结

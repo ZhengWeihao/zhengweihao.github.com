@@ -1,8 +1,13 @@
 ---
-layout: index
-title: Docker常用命令
-date: 2017-11-23 15:43:21
-categories: [java, spring]
+layout:     post
+title:      "Docker常用命令"
+subtitle:   ""
+date:       2017-11-23 15:43:21
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
+    - Spring
 ---
 
 Docker常用命令

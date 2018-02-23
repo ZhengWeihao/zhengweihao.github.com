@@ -1,8 +1,13 @@
 ---
-layout: index
-title: SpringMVC集成Freemark及JSON格式输出
-date: 2015-02-16 12:59:39
-categories: [backend, java, spring, springMVC]
+layout:     post
+title:      "SpringMVC集成Freemark及JSON格式输出"
+subtitle:   ""
+date:       2015-02-16 12:59:39
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
+    - Spring
 ---
 
 SpringMVC集成Freemark及JSON格式输出

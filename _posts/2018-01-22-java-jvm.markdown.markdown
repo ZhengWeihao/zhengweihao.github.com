@@ -1,8 +1,13 @@
 ---
-layout: index
-title: JVM笔记
-date: 2018-01-21 17:42:18
-categories: [java, jvm]
+layout:     post
+title:      "JVM笔记"
+subtitle:   ""
+date:       2018-01-21 17:42:18
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
+    - JVM
 ---
 
 JVM笔记

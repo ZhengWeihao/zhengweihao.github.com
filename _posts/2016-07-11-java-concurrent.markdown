@@ -1,8 +1,13 @@
 ---
-layout: index
-title: Java并发编程笔记
-date: 2016-07-11 17:42:18
-categories: [java, concurrent]
+layout:     post
+title:      "Java并发编程笔记"
+subtitle:   ""
+date:       2016-07-11 17:42:18
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Java
+    - Concurrent
 ---
 
 Java并发编程笔记

@@ -1,8 +1,13 @@
 ---
-layout: index
-title: OSX常用操作笔记
-date: 2015-10-28 14:39:51
-categories: [osx, system] 
+layout:     post
+title:      "OSX常用操作笔记"
+subtitle:   ""
+date:       2015-10-28 14:39:51
+author:     "ZhengWeihao"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - System
+    - OSX
 ---
 
 OSX常用操作笔记
