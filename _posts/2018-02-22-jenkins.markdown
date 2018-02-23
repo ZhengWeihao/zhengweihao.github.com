@@ -1,0 +1,52 @@
+---
+layout: index
+title: Jenkins学习笔记
+date: 2018-02-22 20:11:27
+categories: [java, jenkins]
+---
+
+Jenkins学习笔记
+---
+
+* 目的
+  * 持续集成（Continuous integration）：软件研发中，部分向整体交付，以便尽早发现部分开发的问题
+  * 持续交付（Continuous Delivery）：尽快地向客户交付，以便尽早发现生产环境中存在的问题
+* 安装
+  * https://jenkins.io/download
+  * java -jar JAR_FILE --port PORT
+* 配置（Manage Jenkins）：
+  * Config System：
+    * Maven Project Configuration
+    * Gitlab & SSHKey
+    * E-mail Notification
+  * Manager Plugins：
+    * Gitlab Logo Plugin
+    * Gitlab Hook Plugin
+    * Deploy to container Plugin
+  * New Item：
+    * Source Code Management：
+      * Git：
+        * Repository URL
+        * Credentials
+        * Branches to build：编译的分支，支持通配符
+      * Build Triggers：触发器
+        * Build when change is pushed to GitLab
+        * GitHub hook trigger for GITScm polling
+        * Poll SCM
+      * Pre Steps
+      * Build：
+        * Root POM
+        * Goals and options：clean install -U -D maven.test.skip=true -P test
+      * Post Steps：
+        * Execute Shell（自定义\批量发布）
+      * Build Settings
+        * E-mail Notification
+      * Post-build Actions：
+        * Deploy war/ear to a container（单台发布）：
+          * WAR/EAR files
+          * Context path
+          * Containers：Tomcat
+        * Editable Email Notification
+* GitLab设置：
+  * Settings-Integrations-Webhooks
+

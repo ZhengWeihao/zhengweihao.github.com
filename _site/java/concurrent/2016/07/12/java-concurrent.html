@@ -36,13 +36,21 @@
 
         <nav id="pl__container">
         
+          <a class="java spring pl__all" href="/java/spring/2018/02/23/spring.html"><span class="pl__circle"></span><span class="pl__title">Spring学习笔记</span><span class="pl__date">Feb 2018</span></a>
+        
+          <a class="java jenkins pl__all" href="/java/jenkins/2018/02/23/jenkins.html"><span class="pl__circle"></span><span class="pl__title">Jenkins学习笔记</span><span class="pl__date">Feb 2018</span></a>
+        
+          <a class="java designPattern pl__all" href="/java/designpattern/2018/02/23/design-pattern.html"><span class="pl__circle"></span><span class="pl__title">常用设计模式总结</span><span class="pl__date">Feb 2018</span></a>
+        
           <a class="java idea pl__all" href="/java/idea/2018/01/23/idea-keymap.html"><span class="pl__circle"></span><span class="pl__title">IDEA常用操作</span><span class="pl__date">Jan 2018</span></a>
         
-          <a class="photo style color pl__all" href="/photo/style/color/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格总结</span><span class="pl__date">Jan 2018</span></a>
+          <a class="photo style color pl__all" href="/photo/style/color/2018/01/22/photo-styles-colors.html"><span class="pl__circle"></span><span class="pl__title">常见照片风格色调总结</span><span class="pl__date">Jan 2018</span></a>
         
           <a class="java jvm pl__all" href="/java/jvm/2018/01/22/java-jvm.markdown.html"><span class="pl__circle"></span><span class="pl__title">JVM笔记</span><span class="pl__date">Jan 2018</span></a>
         
           <a class="java pl__all" href="/java/2018/01/22/java-common.html"><span class="pl__circle"></span><span class="pl__title">Java常用操作笔记</span><span class="pl__date">Jan 2018</span></a>
+        
+          <a class="java spring pl__all" href="/java/spring/2017/11/23/docker.html"><span class="pl__circle"></span><span class="pl__title">Docker常用命令</span><span class="pl__date">Nov 2017</span></a>
         
           <a class="java concurrent pl__all" href="/java/concurrent/2016/07/12/java-concurrent.html"><span class="pl__circle"></span><span class="pl__title">Java并发编程笔记</span><span class="pl__date">Jul 2016</span></a>
         
@@ -119,18 +127,27 @@
     <ul>
       <li>线程之间通信（线程之间交换信息）
         <ul>
-          <li>共享内存</li>
+          <li>共享内存：</li>
           <li>消息传递：wait/notify/notifyAll</li>
         </ul>
       </li>
       <li>线程同步（控制不同线程操作发生的相对顺序）
         <ul>
           <li>共享内存的并发模型中，同步是显式进行，如：synchronized</li>
-          <li>消息传递的并发模型中，消息发送必须在消息接收之前，所以同步是隐式的：
+          <li>消息传递的并发模型中，消息发送必须在消息接收之前，同步是隐式进行的</li>
+        </ul>
+      </li>
+      <li>指令重排：
+        <ul>
+          <li>目的：提高程序性能</li>
+          <li>类型：
             <ul>
-              <li>可见性问题：工作内存、主内存</li>
+              <li>编译器优化的重排序：在不改变单线程程序语义的前提下，重新安排语句的执行顺序。</li>
+              <li>指令级并行的重排序：将多条指令重叠执行，如不存在数据依赖性，处理器可以改变语句对应机器指令的执行顺序。</li>
+              <li>内存系统的重排序：处理器使用缓存和读/<strong>写缓冲区</strong></li>
             </ul>
           </li>
+          <li>弊端：内存可见性问题</li>
         </ul>
       </li>
       <li>控制线程执行的顺序：
@@ -153,15 +170,25 @@
   </li>
   <li>volatile关键字
     <ul>
-      <li>支持：可见性</li>
+      <li>支持：可见性、防止指令重排</li>
       <li>不支持：复合操作的原子性</li>
       <li>实现原理：
         <ul>
-          <li>对volatile变量进行写操作时，JVM向处理器发送一条Lock前缀指令。会把缓存行的数据写会系统内存</li>
-          <li>在多处理器的情况下，保证各处理器缓存一致性，实现缓存一致性协议（设置失效与更新）</li>
+          <li>对volatile变量进行写操作时，后边代码中会加入Lock前缀指令：
+            <ul>
+              <li>将当前处理器缓存行的数据写回系统内存</li>
+              <li>使其他CPU里缓存了该内存地址的数据无效</li>
+            </ul>
+          </li>
+          <li>在多处理器模式下实现缓存一致性协议：
+            <ul>
+              <li>每个处理器嗅探当前缓存值是否过期</li>
+              <li>过期数据设置为无效状态</li>
+              <li>下次操作重新读到缓存中</li>
+            </ul>
+          </li>
         </ul>
       </li>
-      <li>优化：拒绝指令重排</li>
     </ul>
   </li>
   <li>synchronized关键字：锁机制，隐式释放
@@ -178,6 +205,13 @@
         <ul>
           <li>代码块执行完成</li>
           <li>线程执行出现异常</li>
+        </ul>
+      </li>
+      <li>级别：
+        <ul>
+          <li>偏向锁：在对象头和栈帧中存储锁偏向的线程ID，以减少CAS操作</li>
+          <li>轻量级锁</li>
+          <li>重量级锁</li>
         </ul>
       </li>
     </ul>
@@ -272,6 +306,18 @@
           <li>Hash取模分段处理</li>
           <li>Atomic类</li>
           <li>ReidsAtomic类（适用分布式环境）</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>原子操作：
+    <ul>
+      <li>实现原理：循环CAS，调用处理器的CMPXCHG指令</li>
+      <li>问题：
+        <ul>
+          <li>ABA问题：当值变回初始值时，CAS操作认为未变更。解决方案为：追加版本号。</li>
+          <li>长时间自旋将导致CPU开销大。JVM能支持处理器的pause指令将得到效率提升。</li>
+          <li>只能保证一个共享变量的原子操作。</li>
         </ul>
       </li>
     </ul>

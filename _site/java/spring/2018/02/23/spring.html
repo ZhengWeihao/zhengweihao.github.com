@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="shortcut icon" href="/imgs/fav.ico">
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
-    <title>JQuery+CSS3实现雪花飘落效果</title>
+    <title>Spring学习笔记</title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     </style>
@@ -70,84 +70,63 @@
 
     <div id="post">
       <div id="pjax">
-        <h2 id="jquerycss3实现雪花飘落效果">JQuery+CSS3实现雪花飘落效果</h2>
-
-<blockquote>
-  <p>看到淘宝APP上出现了雪花飘落的效果，脑袋一动觉得CSS3似乎也很好实现，就动手做了这么个demo。</p>
-</blockquote>
+        <h2 id="spring学习笔记">Spring学习笔记</h2>
 
 <ul>
-  <li>
-    <p>预期效果：
-产生漫天雪花，从天空飘落到地面，停留稍瞬后消融。</p>
+  <li>特点：
+    <ul>
+      <li>轻量</li>
+      <li>面向Bean</li>
+      <li>松耦合</li>
+      <li>无缝集成主流框架</li>
+      <li>设计模式</li>
+    </ul>
   </li>
-  <li>
-    <p>实现思路：
-第一步是产生雪花，即产生div，并利用随机数，随机一定区间的数字作为div的宽高、透明度，并设置border-radius属性为宽高值，即可得到一片大小、透明度随机的雪花。之后将雪花位置设置在屏幕顶端，横向位置随机，即完成雪花的初始化。示例代码如下：</p>
-
-    <pre><code>// 产生雪花dom
-function snowflake(size, alpha, top, left) {
-	var s = document.createElement('div');
-	$(s).css({
-		'width': size,
-		'height': size,
-		'border-radius': size,
-		'background-color': 'rgba(255,255,255,' + alpha + ')',
-		'top': -50,
-		'left': left,
-	}).addClass('snowflake');
-	return s;
-}
-  	
-// 获取一片随机大小、透明度的雪花示例
-var size = Math.random() * flakeSize + 2;
-var alpha = Math.random() * 0.7 + 0.1;
-var left = Math.random() * $(window).width();
-var s = snowflake(size, alpha, 0, left);
-</code></pre>
-
-    <p>产生雪花后，设置css3的transition属性，并将div移动到屏幕底部，即可开启动画效果。同时，雪花飘落后，停顿若干时长再将dom删除，即可达到雪花消融效果。示例代码如下：</p>
-
-    <pre><code>.snowflake {
-	background-color: rgba(255, 255, 255, 0.5);
-	display: inline-block;
-	transition: top 2s;// 此处认为动画时间为2秒较为合适,实际情况中可自行调整
-	transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);// 设置动画的贝塞尔值,使得动画不显得生硬,具体值同样也可按个人喜好调整
-}
-  	
-// 利用setTimeout方法,延时消除雪花,melt的值即为雪花飘落后留存的时长
-setTimeout(function() {
-	$s.remove();
-}, 2000 + melt);
-  	
-完成一片雪花的动画效果后，只要快速不停地循环这个，即能产生雪花不停飘落的效果了。示例代码如下：
-  	
-var it = setInterval(function() {
-	// 初始化雪花
-	var id = 's_' + (++animateId);
-	var size = Math.random() * flakeSize + 2;
-	var alpha = Math.random() * 0.7 + 0.1;
-	var left = Math.random() * $(window).width();
-	var s = snowflake(size, alpha, 0, left);
-	var $s = $(s).attr('id', id);
-	$sky.get(0).appendChild(s);
-  	
-	// 雪花飘落并消融,延迟执行以确保dom已经生成好
-	setTimeout(function() {
-		$s.css('top', maxTop + (flakeSize - $s.width()) / 2);
-  	
-		setTimeout(function() {
-			$s.remove();
-		}, 2000 + melt);
-	}, 100);
-}, rate);
-</code></pre>
+  <li>简化开发的方式：
+    <ul>
+      <li>基于POJO的轻量级和最小侵入性编程</li>
+      <li>通过依赖注入和面向接口松耦合</li>
+      <li>基于切面和惯性进行声明式编程</li>
+      <li>通过切面和模板减少样板式代码</li>
+    </ul>
   </li>
-  <li>
-    <p>结果展示：
-进入页面随机开始频率为60ms，融化时长2s的动画，页面向下拖动可设置参数，<a href="/example/snowflake/index.html">点我查看页面</a>。</p>
+  <li>面向Bean编程（Bean Oriented Programming，BOP）
+    <ul>
+      <li>控制反转（Inversion Of Control，IOC）
+        <ul>
+          <li>概念：通过容器来控制业务与对象之间的依赖关系，而非代码直接控制</li>
+          <li>原理：将实例化对象存储到IOC容器中</li>
+          <li>优点：降低业务与对象之间的依赖程度</li>
+          <li>缺点：启动慢、占用内存多、构造对象慢</li>
+        </ul>
+      </li>
+      <li>依赖注入（Dependency Injection，DI）
+        <ul>
+          <li>提供注解：
+            <ul>
+              <li>@Autowrite Interface i：自动注入实现类</li>
+              <li>@Resource(BEAN_ID)：根据IOC容器中的BeanID注入</li>
+              <li>@Autowrite Class c：根据类型自动注入</li>
+            </ul>
+          </li>
+          <li>注入方式：
+            <ul>
+              <li>Setter</li>
+              <li>构造方法</li>
+              <li>强制赋值</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>面向切面编程（Oriented Programming，AOP）
+        <ul>
+          <li>概念：可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，提高开发效率</li>
+        </ul>
+      </li>
+    </ul>
   </li>
 </ul>
+
 
       </div> <!-- end #pjax -->
 

@@ -1,0 +1,39 @@
+---
+layout: index
+title: Spring学习笔记
+date: 2018-02-22 20:11:27
+categories: [java, spring]
+---
+
+Spring学习笔记
+---
+
+* 特点：
+  * 轻量
+  * 面向Bean
+  * 松耦合
+  * 无缝集成主流框架
+  * 设计模式
+* 简化开发的方式：
+  * 基于POJO的轻量级和最小侵入性编程
+  * 通过依赖注入和面向接口松耦合
+  * 基于切面和惯性进行声明式编程
+  * 通过切面和模板减少样板式代码
+* 面向Bean编程（Bean Oriented Programming，BOP）
+  * 控制反转（Inversion Of Control，IOC）
+    * 概念：通过容器来控制业务与对象之间的依赖关系，而非代码直接控制
+    * 原理：将实例化对象存储到IOC容器中
+    * 优点：降低业务与对象之间的依赖程度
+    * 缺点：启动慢、占用内存多、构造对象慢
+  * 依赖注入（Dependency Injection，DI）
+    * 提供注解：
+      * @Autowrite Interface i：自动注入实现类
+      * @Resource(BEAN_ID)：根据IOC容器中的BeanID注入
+      * @Autowrite Class c：根据类型自动注入
+    * 注入方式：
+      * Setter
+      * 构造方法
+      * 强制赋值
+  * 面向切面编程（Oriented Programming，AOP）
+    * 概念：可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，提高开发效率
+
