@@ -3,7 +3,7 @@ title: ZhengWeihao Blog
 SEOTitle: 郑炜浩的博客 | ZhengWeihao Blog
 header-img: imgs/home-bg.jpg
 email: 150251@gmail.com
-description: "关于前段、后端开发和摄影 | 郑炜浩，Web & Photography Lover，Software Engineer，Photographer | 这里是 @郑炜浩 的个人博客，与你一起发现更大的世界。"
+description: "关于后端、前端开发和摄影 | 郑炜浩，Web & Photography Lover，Software Engineer，Photographer | 这里是 @郑炜浩 的个人博客，与你一起发现更大的世界。"
 keyword: "郑炜浩, ZhengWeihao, 博客, 个人网站, 互联网, Web, JavaScript, Java, 摄影"
 url: "https://blog.zeiganga.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'

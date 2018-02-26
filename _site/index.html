@@ -161,7 +161,7 @@
                 <div class="site-heading">
                     <h1>ZhengWeihao Blog</h1>
                     <!--<hr class="small">-->
-                    <span class="subheading">一生想做浪漫极客</span>
+                    <span class="subheading">不要自视过高，永远有比你强大的人</span>
                 </div>
             </div>
         </div>
@@ -354,7 +354,7 @@
 <div class="post-preview">
     <a href="/2018/01/22/java-jvm.markdown/">
         <h2 class="post-title">
-            JVM笔记
+            JVM学习笔记
         </h2>
         
         <h3 class="post-subtitle">
@@ -362,18 +362,23 @@
         </h3>
         
         <div class="post-content-preview">
-            JVM笔记
+            JVM学习笔记
 
 
-  抽象结构：
+  虚拟机作用：
     
-      实例域、静态域、数据 -&gt; 堆内存（线程之间共享）
-      局部变量、方法定义的参数 -&gt; 虚拟机栈
+      将.class文件编译成机器语言
+      内存管理
     
   
-
-
-
+  运行时数据区：
+    
+      程序计数器：指向当前线程正在执行的字节码指令的地址（行号）
+      虚拟机栈：存储当前线程运行方法所需要的数据、指令、返回地址
+        
+          栈帧
+            
+         ...
         </div>
     </a>
     <p class="post-meta">
@@ -396,14 +401,15 @@
             Java常用操作笔记
 
 
-  查看字节码：
+  查看字节码文件：
     
-      javap -v CLASS_FILE_NAME
-    
-  
-
-
-
+      javap -c -v CLASS_FILE_NAME [ &gt; TEXT_FILE]
+        
+          常见指令：
+            
+              iconst_0：将int类型的常量0压入栈
+              istore_2：将int类型的值存入局部变量2
+  ...
         </div>
     </a>
     <p class="post-meta">
