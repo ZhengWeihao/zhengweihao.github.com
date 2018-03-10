@@ -17,7 +17,7 @@ IDEA常用操作
   * Maven设置（UserSetting、Automatically Download）
   * JDK设置
   * FileEncoding
-  * 自动导入包：General-AutoImport
+  * 自动导入包：Editor-AutoImport
   * 打开多个项目方式：Appearance-SystemSetting-Project Opering
 * 常用实时模板：
   * psvm

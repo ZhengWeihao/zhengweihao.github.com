@@ -71,7 +71,7 @@ JVM学习笔记
 * 内存分配：
   - 指针碰撞（CAS）：须保证内存规整前提
   - Free List：标记空闲空间及空闲大小
-  - TLAB（Thread Local Allaction Buffer）：避免指针激烈竞争
+  - TLAB（Thread Local Allaction Buffer）：避免指针激烈碰撞
   - 栈上分配：JVM允许将线程私有的对象打散分配在栈上，而不是分配在堆上
     - 优点：在函数调用结束后自行销毁，而不需要垃圾回收器的介入，从而提高系统性能
   - 逃逸分析：判断对象的作用域是否有可能逃逸出函数体
