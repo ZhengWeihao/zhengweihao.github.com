@@ -1,0 +1,202 @@
+---
+layout:     post
+title:      "JVM学习笔记"
+subtitle:   ""
+date:       2018-01-21 17:42:18
+author:     "ZhengWeihao"
+header-img: "imgs/post-bg-default.jpg"
+tags:
+    - Java
+    - JVM
+---
+
+JVM学习笔记
+---
+
+* 虚拟机作用：
+  * 将.class文件编译成机器语言
+  * 内存管理
+* 运行时数据区：
+  * 程序计数器：指向当前线程正在执行的字节码指令的地址
+  * 虚拟机栈：存储当前线程运行方法所需要的数据、指令、返回地址
+    * 栈帧
+      * 局部变量表：保存函数的参数以及局部的变量信息，定长4字节
+      * 操作数栈：虚拟机的工作区
+      * 动态链接：指向运行时常量池中该栈帧所属性方法的引用
+      * 出口：方法返回地址
+  * 本地方法栈
+  * 方法区：类信息、常量（1.7）、静态变量、JIT
+  * 堆：存储对象信息
+* 内存模型（JMM）：
+  * 1.8以前：
+    * 新生代：
+      * eden（8）：存储new对象
+      * s0（1）：eden区存储不下时触Minor GC，进入s0或s1区
+      * s1（1）
+    * 老年代
+    * 永久带
+  * 1.8以后：
+    * 新生代
+    * 老年代
+    * MetaSpace（规避永久带溢出问题，支持扩容，不属于堆）
+  * 新生代比例设置原因（8：1：1）：
+    * 理论98%对象在Minor GC时被回收，所以划分eden区，相比只有s0、s1区，增加40%空间利用率。当回收剩余量超过10%，将进行分配担保。
+  * 分配建议：
+    * 总大小：3-4倍于活跃数据的大小
+    * 新生代：1-1.5倍于活跃数据的大小
+    * 老年代：2-3倍于活跃数据的大小
+    * 永久代：1.2-1.5倍于Full GC后的永久带空间占用量
+    * 例如：
+      * 假设老年代活跃数据大小为300MB：
+        * 总堆：1200MB=300MB*4
+        * 新生代：450MB=300MB*1.5
+        * 老年代：750MB=1200MB-450MB
+  * 动态对象年龄判定：相同年龄所有对象的大小总和>Survivor空间的一半，直接晋级，不需要判定MaxTenuringThreshold
+  * 分配担保：
+    * Minor GC前检查老年代最大可用连续空间是否大于新生代对象总空间：
+      * 是：Minor GC
+      * 否：老年代最大可用连续空间是否大于历次晋升到老年代对象的平均大小：
+        * 是：Minor GC
+        * 否：Full GC
+        * -XX:-HandlePromotionFailure：
+          * 允许担保失败：
+            * 大于：Minor GC
+            * 不大于：Full GC
+          * 不允许担保失败：
+            * Full GC
+  * 常用JVM参数：
+    * -Xms
+    * -Xmx
+    * -Xmn
+* 内存分配：
+  - 指针碰撞（CAS）：须保证内存规整前提
+  - Free List：标记空闲空间及空闲大小
+  - TLAB（Thread Local Allaction Buffer）：避免指针激烈碰撞
+  - 栈上分配：JVM允许将线程私有的对象打散分配在栈上，而不是分配在堆上
+    - 优点：在函数调用结束后自行销毁，而不需要垃圾回收器的介入，从而提高系统性能
+  - 逃逸分析：判断对象的作用域是否有可能逃逸出函数体
+  - 常用JVM参数：
+    - 启用逃逸分析：-XX:+DoEscapeAnalysis 
+    - 查看逃逸分析的筛选结果：-XX:+PrintEscapeAnalysis
+    - 禁用TLAB：-XX:-ResizeTLAB
+    - 指定TLAB大小：-XX:TLABSize
+    - 按Eden区百分比设置TLAB大小：-XX:TLABWasteTargetPercent
+    - 打印TLAB日志：-XX:+PrintTLAB
+    - 大对象直接进入老年代：-XX:PretenureSizeThreshold=3145728
+    - 长期存活对象直接进入老年代：-XX:MaxTenuringThreshold=15
+* GC判断算法：
+  * 引用计数法
+    * 缺点：
+      * 循环引用问题
+  * 可达性分析
+    * GC Root：
+      * 虚拟机栈中本地变量表引用的对象
+      * 方法区中
+        * 类静态变量引用的对象
+        * 常量引用的对象
+      * 本地方法栈中JNI引用的对象
+    * 不可达时调用finalize()
+* 引用方式：
+  - 强引用：最常见的引用类型，如：实例化对象并赋值
+  - 软引用：SoftReference，在内存不足时回收，适合作为缓存用法
+  - 弱引用：WeakReference，不管当前内存空间是否足够，都将回收。适合用于大对象
+  - 虚引用：任何时候都可能被回收，主要用来跟踪对象被垃圾回收期回收的活动，必须和引用队列（ReferenceQueue）联合使用。
+* GC方式：
+  * Minor GC：针对新生代，效率最高
+  * Major GC：针对老年代，效率高于Minor GC
+  * Full GC：Minor GC+Major GC，效率相对较低
+* 回收算法：
+  * 标记-清除
+    * 缺点：
+      * 回收效率不高
+      * 会产生空间碎片
+  * 复制回收算法
+    * 优点：简单、高效，不需要考虑空间碎片
+    * 缺点：空间利用率较低（须单独分配一块复制区）
+  * 标记-整理算法：
+    * 基于标记-清楚，并做碎片整理功能
+    * 优点：
+      * 不需考虑空间碎片
+* 回收器：
+  * Young generation（复制回收）：
+    * Serial：串行回收器
+      * 优点：
+        * 适合并行能力较弱的机器
+      * 缺点：
+        * 回收效率低
+      * 作用于：新生代、老年代
+      * JVM参数：
+        * -XX:+UserSerialGC
+    * ParNew：并行回收器
+      * 优点：
+        * 回收效率高
+      * 作用于：新生代
+      * JVM参数：
+        * 启用：-XX:+UseParNewGC
+        * 指定GC工作线程数：-XX:ParallelGCThreads
+    * Parallel Scavenge：
+      * 特点：
+        * 关注吞吐量（运行用户代码的时间/(运行用户代码时间+垃圾收集时间)）
+        * 无法与CMS收集器配合使用
+      * JVM参数：
+        * 设置最大回收时间：-XX:MaxGCPauseMillis=n
+        * 设置回收时间占总时间比率：-XX:GCTimeRatio=n
+        * 自动选择年轻代区大小和相应的Survivor区比例（建议开启）：-XX:+UseAdaptiveSizePolicy
+  * Tenured generation
+    * CMS（Concurrent Mark Sweep）：
+      * 采用算法：
+        * 标记-清除
+      * 工作流程：
+        * 初始标记（停顿）
+        * 并发标记（不停顿）
+        * 重新标记（停顿）
+        * 并发清除（不停顿）
+      * 优点：
+        - 减少回收停顿时间
+      * 缺点：
+        * CPU敏感
+        * 无法处理浮动垃圾
+        * 会产生空间碎片
+      * JVM参数：
+        * 启用：-XX:+UseConcMarkSweep
+        * ConcurrentMode失败，启用Serial Old：-XX:CMSInitiationOccupancyFraction
+        * Full GC时开启碎片整理：-XX:+UseCMSCompactAtFullCollection
+        * 执行若干次回收后进行一次压缩：-XX:CMSFullGCsBeforeCompaction（0表示一直压缩）
+    * Serial Old（MSC）：
+      * 采用算法：
+        * 标记-整理
+      * 特点：
+        * 同Serial
+        * 与各新生代算法兼容
+        * CMS的备用预案
+    * Parallel Old：
+      * 采用算法：
+        * 标记-整理
+  * G1：
+    * 整体基于标记-整理算法，局部基于复制算法
+    * 特点：
+      * 并行与并发
+      * 分代收集
+      * 空间整理
+      * 可预测停顿
+    * 优点：
+      * 可以使程序不停顿
+    * JVM参数：
+      * 启用：-XX:+UseG1GC
+      * 指定最停顿时间：-XX:MaxGCPauseMillis
+      * 设置并行回收的线程数量：-XX:ParallelGcThreads
+  * 常见搭配：
+    * CMS+ParNew（关注停顿时间）
+    * Parallel Old+Parallel Scavenge（关注吞吐量）
+  * 图例：
+    * ![collectors](/imgs/jvm/collectors.jpg)
+    * ![collectors](/imgs/jvm/collectors2.jpg)
+  * 优化目标：减少Full GC
+* 调试工具：
+  * jmap -heap PID
+  * -XX:+PrintGCDetails
+* 参考资料：
+  * [美团JVM案例分析](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&mpshare=1&scene=1&srcid=1229bnD25a2zpI3DBKQxsI8T#rd)
+  * [Oracle JVM Options文档](http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html)
+  * [深入理解JVM(3)——7种垃圾收集器](https://crowhawk.github.io/2017/08/15/jvm_3/)
+

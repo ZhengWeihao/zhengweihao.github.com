@@ -1,0 +1,75 @@
+---
+layout:     post
+title:      "Docker常用命令"
+subtitle:   ""
+date:       2017-11-23 15:43:21
+author:     "ZhengWeihao"
+header-img: "imgs/post-bg-default.jpg"
+tags:
+    - Java
+    - Spring
+---
+
+Docker常用命令
+---
+
+* 查看Docker信息：
+  * docker info
+  * docker version
+  * inspect [OPTIONS] NAME|ID [NAME|ID…] 查看已建容器/镜像详细信息
+
+* 容器相关：
+
+  * run [OPTIONS] IMAGE [COMMAND] _ [ARG...] 启动容器：
+    * -i, --interactive：始终标准输入
+    * -t, --tty：tty终端
+    * -d, --detach：后台形式运行
+    * --name NAME_STRING：命名
+    * -P, --publish-all：随机映射端口号
+    * -p, --publish list：指定端口映射，如：
+      * -p 80：随机对应80端口
+      * -p 8080:80：宿主对应容器
+      * -p 0.0.0.0:80
+      * -p 0.0.0.0:8080:80
+  * ps [OPTIONS] 查看容器：
+    * -a, --all： 全部
+    * -l, --latest：最近的
+
+
+  * start [OPTIONS] CONTAINER [CONTAINER…] 启动容器：
+    * -i：交互方式
+  * stop [OPTIONS] CONTAINER [CONTAINER…] 停止容器
+  * kill [OPTIONS] CONTAINER [CONTAINER…] 强制停止容器
+  * rm [OPTIONS] CONTAINER [CONTAINER…] 删除已停止容器
+  * attach [OPTIONS] CONTAINER
+  * 守护式容器：启动后以Ctrl+P Ctrl+Q退出
+  * top CONTAINER [ps OPTIONS] 显示容器中运行的线程
+  * exec [OPTIONS] CONTAINER COMMAND [ARG…] 在运行的容器中执行命令
+  * logs [OPTIONS] CONTAINER 查看容器的日志：
+    * -f, --follow：实时跟踪日志
+    * -t, --timestamps：显示时间戳
+    * --tail string：显示指定行数的日志，默认"all"
+
+* 镜像与仓库相关：
+
+  * images [OPTIONS] _ [REPOSITORY[:TAG]]
+    * -a, --all：显示所有镜像
+    * -f, --filter filter：过滤条件
+    * --no-trunc：不阶段ID
+    * -q, --quiet：仅显示ID
+  * rmi [OPTIONS] IMAGE [IMAGE…] 删除镜像：
+    * -f, --force：强制删除
+    * --no-prune：保留标签镜像
+    * 动态删除镜像的方法：rmi $(docker images REPOSITORY -q)
+  * search [OPTIONS] TERM：查找镜像（默认一次最多显示25条）：
+    * --automated=false：自动
+    * --no-trunc：不截断显示
+    * -s, --stars=0：根据星级查找
+  * pull [OPTIONS] NAME[:TAG|@DIGEST]：拉取镜像：
+    * -a, --all-tags：下载全部标签
+  * push [OPTIONS] NAME[:TAG] 推送镜像
+  * commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]] 为更改的容器创建新镜像
+  * build [OPTIONS] PTH |URL | - 根据Dockerfile构建镜像
+  * 设置mirror：
+    * /etc/default/docker中添加：
+      * DOCKER_OPTS=--registry-mirror:MIRROR_URL

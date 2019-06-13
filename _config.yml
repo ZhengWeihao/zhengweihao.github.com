@@ -3,7 +3,7 @@ title: ZhengWeihao Blog
 SEOTitle: 郑炜浩的博客 | ZhengWeihao Blog
 header-img: imgs/home-bg.jpg
 email: 150251@gmail.com
-description: "关于后端、前端开发和摄影 | 郑炜浩，Web & Photography Lover，Software Engineer，Photographer | 这里是 @郑炜浩 的个人博客，与你一起发现更大的世界。"
+description: "关于软件开发和摄影 | 郑炜浩，Web & Photography Lover，Software Engineer，Photographer | 这里是 @郑炜浩 的个人博客，与你一起发现更大的世界。"
 keyword: "郑炜浩, ZhengWeihao, 博客, 个人网站, 互联网, Web, JavaScript, Java, 摄影"
 url: "https://blog.zeiganga.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     Jiho小虾
+weibo_username:     一只红鲤鱼啊
 zhihu_username:     ZhengWeihao
 github_username:    zhengweihao.github.com
 #twitter_username:   ZhengWeihao
@@ -68,7 +68,7 @@ ga_domain: zeiganga.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，拍拍照片，<br>离开世界之前，一切都是过程"
+sidebar-about-description: "离开世界之前，一切都是过程"
 sidebar-avatar: /imgs/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
